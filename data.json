@@ -2,6 +2,15 @@
 "players": [
 {
 "name": "Marks Kanins",
+"gp": 22,
+"goals": 41,
+"assists": 25,
+"points": 66,
+"shots": 0,
+"pim": 4
+},
+  {
+"name": "Ryan Wonfor",
 "gp": 0,
 "goals": 0,
 "assists": 0,
