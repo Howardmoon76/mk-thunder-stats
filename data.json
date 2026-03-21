@@ -29,5 +29,12 @@
 "ga": 2,
 "result": "W"
 }
-]
+],
+  "nextGame": {
+    "date": "22/03/2026"
+    "opponent": "Oxford city Stars"
+    "competition": "League"
+    "homeAway": "Away"
+    "faceoff": "18:30"
+}
 }
