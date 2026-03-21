@@ -1,0 +1,33 @@
+{
+"players": [
+{
+"name": "Marks Kanins",
+"gp": 25,
+"goals": 45,
+"assists": 7,
+"points": 52,
+"shots": 100,
+"pim": 10
+},
+{
+"name": "Sam Peters",
+"gp": 25,
+"goals": 10,
+"assists": 6,
+"points": 16,
+"shots": 110,
+"pim": 20
+}
+],
+"games": [
+{
+"date": "15/03/2026",
+"opponent": "Cardiff Canucks",
+"competition": "League",
+"homeAway": "Home",
+"gf": 4,
+"ga": 2,
+"result": "W"
+}
+]
+}
