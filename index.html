@@ -230,3 +230,137 @@ font-size: 2rem;
 <h1>MK Thunder Stats</h1>
 <p>Live team leaders, results and season stats</p>
 </div>
+</div>
+<div class="header-divider"></div>
+</header>
+
+<div class="container">
+<div class="hero-grid">
+<div class="card hero-card">
+<h2>Top Scorer</h2>
+<div id="topScorer">Loading...</div>
+</div>
+
+<div class="card hero-card">
+<h2>Latest Result</h2>
+<div id="latestGame">Loading...</div>
+</div>
+</div>
+
+<div class="leaders-grid">
+<div class="card">
+<h2>Points Leader</h2>
+<div id="pointsLeader">Loading...</div>
+</div>
+
+<div class="card">
+<h2>Goals Leader</h2>
+<div id="goalsLeader">Loading...</div>
+</div>
+
+<div class="card">
+<h2>Shots Leader</h2>
+<div id="shotsLeader">Loading...</div>
+</div>
+</div>
+
+<div class="bottom-grid">
+<div class="card">
+<h2>Team Leaders</h2>
+<div id="leaders" class="leaders-list">Loading...</div>
+</div>
+
+<div class="card">
+<h2>Recent Results</h2>
+<div id="recentResults" class="results-list">Loading...</div>
+</div>
+</div>
+
+<div class="footer-note">
+Live data pulled from your JSON file
+</div>
+</div>
+
+<script>
+fetch("data.json")
+.then(response => {
+if (!response.ok) {
+throw new Error("Could not load data.json");
+}
+return response.json();
+})
+.then(data => {
+const players = [...data.players];
+const games = [...data.games];
+
+players.sort((a, b) => b.points - a.points);
+
+const topPlayer = players[0];
+const goalsLeader = [...players].sort((a, b) => b.goals - a.goals)[0];
+const shotsLeader = [...players].sort((a, b) => b.shots - a.shots)[0];
+
+document.getElementById("topScorer").innerHTML = `
+<div class="stat-name">${topPlayer.name}</div>
+<div class="stat-value">${topPlayer.points} pts</div>
+<div class="sub-text">${topPlayer.goals} goals • ${topPlayer.assists} assists</div>
+`;
+
+document.getElementById("pointsLeader").innerHTML = `
+<div class="mini-name">${topPlayer.name}</div>
+<div class="mini-value">${topPlayer.points}</div>
+<div class="mini-label">Points</div>
+`;
+
+document.getElementById("goalsLeader").innerHTML = `
+<div class="mini-name">${goalsLeader.name}</div>
+<div class="mini-value">${goalsLeader.goals}</div>
+<div class="mini-label">Goals</div>
+`;
+
+document.getElementById("shotsLeader").innerHTML = `
+<div class="mini-name">${shotsLeader.name}</div>
+<div class="mini-value">${shotsLeader.shots}</div>
+<div class="mini-label">Shots</div>
+`;
+
+document.getElementById("leaders").innerHTML = players.map(player => `
+<div class="leader-row">
+<div class="leader-name">${player.name}</div>
+<div class="leader-stats">
+GP: ${player.gp} | G: ${player.goals} | A: ${player.assists} | PTS: ${player.points} | Shots: ${player.shots} | PIM: ${player.pim}
+</div>
+</div>
+`).join("");
+
+const latestGame = games[games.length - 1];
+
+document.getElementById("latestGame").innerHTML = `
+<div class="stat-name">${latestGame.opponent}</div>
+<div class="stat-value">${latestGame.gf} - ${latestGame.ga}</div>
+<div class="sub-text">${latestGame.homeAway} • ${latestGame.competition} • ${latestGame.result}</div>
+`;
+
+const recentGames = [...games].reverse().slice(0, 5);
+
+document.getElementById("recentResults").innerHTML = recentGames.map(game => `
+<div class="result-row">
+<div class="result-title">${game.date} — ${game.opponent}</div>
+<div class="result-meta">
+${game.homeAway} | ${game.competition} | ${game.gf}-${game.ga} (${game.result})
+</div>
+</div>
+`).join("");
+})
+.catch(error => {
+console.error(error);
+document.getElementById("topScorer").textContent = "Could not load data.";
+document.getElementById("latestGame").textContent = "Could not load data.";
+document.getElementById("pointsLeader").textContent = "Could not load data.";
+document.getElementById("goalsLeader").textContent = "Could not load data.";
+document.getElementById("shotsLeader").textContent = "Could not load data.";
+document.getElementById("leaders").textContent = "Could not load data.";
+document.getElementById("recentResults").textContent = "Could not load data.";
+});
+</script>
+</body>
+</html>
