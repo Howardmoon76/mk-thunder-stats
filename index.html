@@ -264,8 +264,8 @@ font-size: 2rem;
 </div>
 
 <div class="card">
-<h2>Shots Leader</h2>
-<div id="shotsLeader">Loading...</div>
+<h2>PIM Leader</h2>
+<div id="PIMLeader">Loading...</div>
 </div>
 </div>
 
@@ -302,7 +302,7 @@ players.sort((a, b) => b.points - a.points);
 
 const topPlayer = players[0];
 const goalsLeader = [...players].sort((a, b) => b.goals - a.goals)[0];
-const shotsLeader = [...players].sort((a, b) => b.shots - a.shots)[0];
+const pimLeader = [...players].sort((a, b) => b.pim - a.pim)[0];
 
 document.getElementById("topScorer").innerHTML = `
 <div class="stat-name">${topPlayer.name}</div>
@@ -322,10 +322,10 @@ document.getElementById("goalsLeader").innerHTML = `
 <div class="mini-label">Goals</div>
 `;
 
-document.getElementById("shotsLeader").innerHTML = `
-<div class="mini-name">${shotsLeader.name}</div>
-<div class="mini-value">${shotsLeader.shots}</div>
-<div class="mini-label">Shots</div>
+document.getElementById("PIMLeader").innerHTML = `
+<div class="mini-name">${pimLeader.name}</div>
+<div class="mini-value">${pimLeader.pim}</div>
+<div class="mini-label">PIM</div>
 `;
 
 document.getElementById("leaders").innerHTML = players.map(player => `
