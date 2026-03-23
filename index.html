@@ -305,9 +305,14 @@ const goalsLeader = [...players].sort((a, b) => b.goals - a.goals)[0];
 const pimLeader = [...players].sort((a, b) => b.pim - a.pim)[0];
 
 document.getElementById("topScorer").innerHTML = `
+<div class="top-player">
+<div>
 <div class="stat-name">${topPlayer.name}</div>
 <div class="stat-value">${topPlayer.points} pts</div>
 <div class="sub-text">${topPlayer.goals} goals • ${topPlayer.assists} assists</div>
+</div>
+<img src="${topPlayer.image}" class="player-img">
+</div>
 `;
 
 document.getElementById("pointsLeader").innerHTML = `
