@@ -232,6 +232,7 @@ box-shadow: 0 0 15px #00e0c6;
 display: flex;
 justify-content: space-between;
 align-items: center;
+  gap:15px;
 }
 </style>
 </head>
@@ -324,7 +325,7 @@ document.getElementById("topScorer").innerHTML = `
 <div class="stat-value">${topPlayer.points} pts</div>
 <div class="sub-text">${topPlayer.goals} goals • ${topPlayer.assists} assists</div>
 </div>
-<img src="${topPlayer.image}" class="player-img">
+<img src="${topPlayer.image}" class="player-img" style="width:100px; height:100px; object-fit:cover; border-radius:50%; border:2px solid #00e0c6; box-shadow:0 0 15px #00e0c6;">
 </div>
 `;
 
