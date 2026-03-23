@@ -2,6 +2,7 @@
 "players": [
 {
 "name": "Marks Kanins",
+  "image": "marks.png" ,
 "gp": 22,
 "goals": 41,
 "assists": 25,
