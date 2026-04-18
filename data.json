@@ -58,9 +58,9 @@
 "name": "Josh Blackwood",
 "image": "josh.png",
 "gp": 10,
-"goals": 99,
+"goals": 6,
 "assists": 6,
-"points": 99,
+"points": 12,
 "pim": 30
 },
 {
@@ -73,24 +73,27 @@
 "pim": 15
 }
 ],
+
 "games": [
 {
 "date": "15/03/2026",
 "opponent": "Cardiff Canucks",
 "competition": "League",
 "homeAway": "Home",
-"gf": 3,
-"ga": 4,
-"result": "L"
+"gf": 2,
+"ga": 2,
+"result": "OTL"
 }
 ],
+
 "nextGame": {
-"date": "22/08/2026",
+"date": "22/03/2026",
 "opponent": "Oxford City Stars",
 "competition": "League",
 "homeAway": "Away",
 "faceoff": "18:30"
-}
+},
+
 "leagueTable": [
 {
 "pos": 1,
@@ -139,7 +142,18 @@
 "gf": 101,
 "ga": 70,
 "pts": 45
+},
+{
+"pos": 5,
+"team": "Cardiff Canucks",
+"gp": 22,
+"w": 10,
+"otw": 1,
+"otl": 2,
+"l": 9,
+"gf": 80,
+"ga": 85,
+"pts": 34
 }
 ]
-
-
+}
