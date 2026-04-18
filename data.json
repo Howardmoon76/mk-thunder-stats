@@ -97,19 +97,19 @@
 "leagueTable": [
 {
 "pos": 1,
-"team": "Peterborough Phantoms 2",
+"team": "Guildford Phoenix",
 "gp": 22,
-"w": 18,
-"otw": 1,
+"w": 19,
+"otw": 0,
 "otl": 1,
 "l": 2,
-"gf": 120,
-"ga": 55,
-"pts": 57
+"gf": 148,
+"ga": 45,
+"pts": 59
 },
 {
 "pos": 2,
-"team": "Haringey Huskies",
+"team": "Peterborough Phantoms 2",
 "gp": 22,
 "w": 16,
 "otw": 2,
@@ -121,7 +121,7 @@
 },
 {
 "pos": 3,
-"team": "Guildford Phoenix",
+"team": "Haringey Huskies",
 "gp": 22,
 "w": 15,
 "otw": 1,
@@ -145,7 +145,7 @@
 },
   {
 "pos": 5,
-"team": "MK Thunder",
+"team": "Invicta Mustangs",
 "gp": 22,
 "w": 14,
 "otw": 1,
@@ -157,7 +157,7 @@
 },
   {
 "pos": 6,
-"team": "MK Thunder",
+"team": "Cardiff Canucks",
 "gp": 22,
 "w": 14,
 "otw": 1,
@@ -169,7 +169,7 @@
 },
   {
 "pos": 7,
-"team": "MK Thunder",
+"team": "Oxford Rising Stars",
 "gp": 22,
 "w": 14,
 "otw": 1,
@@ -181,7 +181,7 @@
 },
   {
 "pos": 8,
-"team": "MK Thunder",
+"team": "Bristol Pitbulls 2",
 "gp": 22,
 "w": 14,
 "otw": 1,
@@ -193,7 +193,7 @@
 },
   {
 "pos": 9,
-"team": "MK Thunder",
+"team": "Slough Spitfires",
 "gp": 22,
 "w": 14,
 "otw": 1,
@@ -205,7 +205,7 @@
 },
   {
 "pos": 10,
-"team": "MK Thunder",
+"team": "Chelmsford Warriors",
 "gp": 22,
 "w": 14,
 "otw": 1,
@@ -217,7 +217,7 @@
 },
   {
 "pos": 11,
-"team": "MK Thunder",
+"team": "Solent Junior Devils",
 "gp": 22,
 "w": 14,
 "otw": 1,
@@ -229,7 +229,7 @@
 },
 {
 "pos": 12,
-"team": "Cardiff Canucks",
+"team": "Lee Valley Lions",
 "gp": 22,
 "w": 10,
 "otw": 1,
