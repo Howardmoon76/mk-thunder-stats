@@ -81,8 +81,8 @@
 "competition": "League",
 "homeAway": "Home",
 "gf": 2,
-"ga": 2,
-"result": "OTL"
+"ga": 4,
+"result": "L"
 }
 ],
 
@@ -143,8 +143,92 @@
 "ga": 70,
 "pts": 45
 },
-{
+  {
 "pos": 5,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
+},
+  {
+"pos": 6,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
+},
+  {
+"pos": 7,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
+},
+  {
+"pos": 8,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
+},
+  {
+"pos": 9,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
+},
+  {
+"pos": 10,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
+},
+  {
+"pos": 11,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
+},
+{
+"pos": 12,
 "team": "Cardiff Canucks",
 "gp": 22,
 "w": 10,
