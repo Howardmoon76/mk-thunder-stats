@@ -91,4 +91,55 @@
 "homeAway": "Away",
 "faceoff": "18:30"
 }
+"leagueTable": [
+{
+"pos": 1,
+"team": "Peterborough Phantoms 2",
+"gp": 22,
+"w": 18,
+"otw": 1,
+"otl": 1,
+"l": 2,
+"gf": 120,
+"ga": 55,
+"pts": 57
+},
+{
+"pos": 2,
+"team": "Haringey Huskies",
+"gp": 22,
+"w": 16,
+"otw": 2,
+"otl": 1,
+"l": 3,
+"gf": 98,
+"ga": 61,
+"pts": 53
+},
+{
+"pos": 3,
+"team": "Guildford Phoenix",
+"gp": 22,
+"w": 15,
+"otw": 1,
+"otl": 2,
+"l": 4,
+"gf": 90,
+"ga": 64,
+"pts": 49
+},
+{
+"pos": 4,
+"team": "MK Thunder",
+"gp": 22,
+"w": 14,
+"otw": 1,
+"otl": 1,
+"l": 6,
+"gf": 101,
+"ga": 70,
+"pts": 45
 }
+]
+
+
