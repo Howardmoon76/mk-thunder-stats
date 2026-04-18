@@ -2,7 +2,7 @@
 "players": [
 {
 "name": "Marks Kanins",
-  "image": "marks.png" ,
+"image": "marks.png",
 "gp": 22,
 "goals": 41,
 "assists": 25,
@@ -10,8 +10,9 @@
 "shots": 0,
 "pim": 4
 },
-  {
+{
 "name": "Ryan Wonfor",
+"image": "ryan.png",
 "gp": 21,
 "goals": 12,
 "assists": 21,
@@ -19,8 +20,9 @@
 "shots": 0,
 "pim": 8
 },
-  {
+{
 "name": "Xander Robinson",
+"image": "xander.png",
 "gp": 22,
 "goals": 13,
 "assists": 16,
@@ -28,8 +30,9 @@
 "shots": 0,
 "pim": 6
 },
-  {
+{
 "name": "Harry MacGarvey",
+"image": "harry.png",
 "gp": 15,
 "goals": 4,
 "assists": 10,
@@ -37,8 +40,9 @@
 "shots": 0,
 "pim": 11
 },
-   {
+{
 "name": "Robert Oxley",
+"image": "robert.png",
 "gp": 20,
 "goals": 4,
 "assists": 10,
@@ -46,8 +50,9 @@
 "shots": 0,
 "pim": 8
 },
-  {
+{
 "name": "Hayden Hagger",
+"image": "hayden.png",
 "gp": 19,
 "goals": 6,
 "assists": 6,
@@ -55,8 +60,9 @@
 "shots": 0,
 "pim": 6
 },
-   {
+{
 "name": "Josh Blackwood",
+"image": "josh.png",
 "gp": 10,
 "goals": 6,
 "assists": 6,
@@ -66,6 +72,7 @@
 },
 {
 "name": "Sam Peters",
+"image": "sam.png",
 "gp": 22,
 "goals": 6,
 "assists": 6,
@@ -81,7 +88,7 @@
 "competition": "League",
 "homeAway": "Home",
 "gf": 2,
-"ga": 4,
+"ga": 2,
 "result": "L"
 }
 ],
