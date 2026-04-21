@@ -74,12 +74,21 @@
 },
 {
 "name": "Josh Hickman",
-"image": "josh.png",
+"image": "hickman.png",
 "gp": 13,
 "goals": 4,
 "assists": 5,
 "points": 9,
 "pim": 66
+}  
+{
+"name": "James Bryan",
+"image": "james.png",
+"gp": 21,
+"goals": 4,
+"assists": 4,
+"points": ,
+"pim": 70
 }
 ],
 
