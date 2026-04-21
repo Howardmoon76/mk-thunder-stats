@@ -21,7 +21,12 @@
 "goals": 12,
 "assists": 21,
 "points": 33,
-"pim": 8
+"pim": 8,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "Xander Robinson",
@@ -30,7 +35,12 @@
 "goals": 13,
 "assists": 16,
 "points": 29,
-"pim": 6
+"pim": 6,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "Harry MacGarvey",
@@ -39,7 +49,12 @@
 "goals": 4,
 "assists": 10,
 "points": 14,
-"pim": 11
+"pim": 11,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "Robert Oxley",
@@ -48,7 +63,12 @@
 "goals": 4,
 "assists": 10,
 "points": 14,
-"pim": 8
+"pim": 8,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "Hayden Hagger",
@@ -57,7 +77,12 @@
 "goals": 6,
 "assists": 6,
 "points": 12,
-"pim": 6
+"pim": 6,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "Josh Blackwood",
@@ -66,7 +91,12 @@
 "goals": 6,
 "assists": 6,
 "points": 12,
-"pim": 30
+"pim": 30,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
   {
 "name": "Sam Peters",
@@ -75,7 +105,12 @@
 "goals": 6,
 "assists": 6,
 "points": 12,
-"pim": 15
+"pim": 15,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "Josh Hickman",
@@ -84,7 +119,12 @@
 "goals": 4,
 "assists": 5,
 "points": 9,
-"pim": 66
+"pim": 66,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "James Bryan",
@@ -93,7 +133,12 @@
 "goals": 4,
 "assists": 4,
 "points":8 ,
-"pim": 70
+"pim": 70,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 }
 ],
 
