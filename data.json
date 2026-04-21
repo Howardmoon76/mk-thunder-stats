@@ -16,7 +16,7 @@
 "goals": 12,
 "assists": 21,
 "points": 33,
-"pim": 66
+"pim": 8
 },
 {
 "name": "Xander Robinson",
@@ -63,7 +63,7 @@
 "points": 12,
 "pim": 30
 },
-{
+  {
 "name": "Sam Peters",
 "image": "sam.png",
 "gp": 22,
@@ -71,6 +71,15 @@
 "assists": 6,
 "points": 12,
 "pim": 15
+}
+{
+"name": "Josh Hickman",
+"image": "josh.png",
+"gp": 13,
+"goals": 4,
+"assists": 5,
+"points": 9,
+"pim": 66
 }
 ],
 
