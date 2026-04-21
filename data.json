@@ -10,7 +10,7 @@
 "pim": 4,
   "number":97,
   "position": "Forward",
-  "Shoots": "Right",
+  "shoots": "Right",
   "Satus": "Active",
   "bio": "Lots of info will go here"
 },
