@@ -126,7 +126,7 @@
   "Satus": "Active",
   "bio": "Lots of info will go here"
 },
-{
+  {
 "name": "James Bryan",
 "image": "james.png",
 "gp": 21,
@@ -134,6 +134,34 @@
 "assists": 4,
 "points":8 ,
 "pim": 70,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
+},
+  {
+"name": "Lewis Conroy",
+"image": "lewis.png",
+"gp": 17,
+"goals": 3,
+"assists": 5,
+"points":8 ,
+"pim": 4,
+  "number":97,
+  "position": "Forward",
+  "shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
+},
+{
+"name": "Callum Worthington-Evans",
+"image": "callum.png",
+"gp": 13,
+"goals": 1,
+"assists": 6,
+"points":7 ,
+"pim": 6,
   "number":97,
   "position": "Forward",
   "shoots": "Right",
