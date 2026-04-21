@@ -7,7 +7,12 @@
 "goals": 41,
 "assists": 25,
 "points": 66,
-"pim": 4
+"pim": 4,
+  "number":97,
+  "position": "Forward",
+  "Shoots": "Right",
+  "Satus": "Active",
+  "bio": "Lots of info will go here"
 },
 {
 "name": "Ryan Wonfor",
