@@ -1,3 +1,8 @@
+
+mark ward <markward76@gmail.com>
+19:44 (0 minutes ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -180,6 +185,18 @@ margin-bottom: 4px;
 .result-meta {
 color: #c9e1e6;
 font-size: 0.95rem;
+}
+
+.player-link {
+color: #ffffff;
+text-decoration: none;
+transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.player-link:hover {
+color: #00e0c6;
+text-shadow: 0 0 8px rgba(0, 224, 198, 0.5);
+text-decoration: underline;
 }
 
 .footer-note {
@@ -501,7 +518,9 @@ const displayedPlayers = showAllLeaders ? players : players.slice(0, 5);
 leadersContainer.innerHTML = `
 ${displayedPlayers.map(player => `
 <div class="leader-row">
-<div class="leader-name">${player.name}</div>
+<div class="leader-name">
+<a class="player-link" href="player.html?name=${encodeURIComponent(player.name)}">${player.name}</a>
+</div>
 <div class="leader-stats">
 GP: ${player.gp} | G: ${player.goals} | A: ${player.assists} | PTS: ${player.points} | PIM: ${player.pim}
 </div>
