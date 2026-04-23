@@ -198,7 +198,7 @@
 },
   {
 "name": "James Moeller",
-"image": "mark.png",
+"image": "moeller.png",
 "gp": 8,
 "goals": 1,
 "assists": 2,
@@ -212,7 +212,7 @@
 },
   {
 "name": "Henri Kohvakka",
-"image": "mark.png",
+"image": "henri.png",
 "gp": 9,
 "goals": 0,
 "assists": 3,
@@ -226,7 +226,7 @@
 },
   {
 "name": "Charlie Conroy",
-"image": "mark.png",
+"image": "charlie.png",
 "gp": 19,
 "goals": 0,
 "assists": 2,
@@ -240,7 +240,7 @@
 },
   {
 "name": "Sam Purcell",
-"image": "mark.png",
+"image": "prrcell.png",
 "gp": 17,
 "goals": 1,
 "assists": 0,
@@ -254,7 +254,7 @@
 },
   {
 "name": "Sam Rickard",
-"image": "mark.png",
+"image": "place.png",
 "gp": 7,
 "goals": 1,
 "assists": 0,
@@ -268,7 +268,7 @@
 },
 {
 "name": "Elliott Davies",
-"image": "mark.png",
+"image": "elliott.png",
 "gp": 6,
 "goals": 0,
 "assists": 1,
