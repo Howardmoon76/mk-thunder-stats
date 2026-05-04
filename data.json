@@ -30,6 +30,7 @@
   "goals": [
 {
 "period": "1",
+"team": "MK Thunder",
 "time": "12:34",
 "scorer": "Dom Wealthall",
 "assist1": "Player One",
@@ -38,7 +39,7 @@
 ],
 "penalties": [
 {
-"period": "2",
+"period": "1",
 "time": "08:20",
 "player": "Dom Wealthall",
 "penalty": "Hooking",
