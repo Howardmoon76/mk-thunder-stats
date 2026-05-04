@@ -6,64 +6,129 @@
 <title>Match Details</title>
 
 <style>
+* {
+box-sizing: border-box;
+}
+
 body {
 margin: 0;
-font-family: Arial;
-background: linear-gradient(180deg, #061116 0%, #0a1f27 100%);
-color: white;
+font-family: Arial, Helvetica, sans-serif;
+color: #ffffff;
+background:
+radial-gradient(circle at top, rgba(35, 185, 205, 0.15), transparent 35%),
+linear-gradient(180deg, #061116 0%, #0a1f27 45%, #0d2a33 100%);
+min-height: 100vh;
 padding: 30px;
 }
 
-.card {
-background: rgba(255,255,255,0.08);
-border: 1px solid rgba(30,199,217,0.3);
-border-radius: 16px;
-padding: 20px;
-margin-bottom: 20px;
+.container {
+max-width: 1100px;
+margin: 0 auto;
 }
 
-h1 {
+.back-link {
+color: #00e0c6;
+font-weight: 700;
+text-decoration: none;
+}
+
+.card {
+background: linear-gradient(180deg, rgba(19, 48, 57, 0.96), rgba(12, 35, 43, 0.96));
+border: 1px solid rgba(30, 199, 217, 0.22);
+border-radius: 18px;
+padding: 22px;
+margin-top: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+}
+
+h1, h2 {
 margin-top: 0;
 }
 
+h2 {
+color: #9ee9f2;
+text-transform: uppercase;
+font-size: 1.1rem;
+letter-spacing: 0.7px;
+}
+
 .score {
-font-size: 3rem;
+font-size: 3.5rem;
+font-weight: 900;
 color: #1ec7d9;
-font-weight: bold;
+margin: 10px 0;
 }
 
 .meta {
-opacity: 0.8;
+color: #d7edf0;
+font-weight: 700;
 }
 
-a {
-color: #00e0c6;
+.table-wrap {
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+min-width: 650px;
+}
+
+th, td {
+padding: 12px 10px;
+text-align: left;
+border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+th {
+color: #9ee9f2;
+text-transform: uppercase;
+font-size: 0.85rem;
+}
+
+tr:hover {
+background: rgba(0, 224, 198, 0.06);
+}
+
+.empty {
+color: #c9e1e6;
 }
 </style>
 </head>
 
 <body>
+<div class="container">
 
-<a href="index.html">← Back to stats</a>
+<a href="index.html" class="back-link">← Back to stats</a>
 
 <div id="match">Loading...</div>
+
+</div>
 
 <script>
 const params = new URLSearchParams(window.location.search);
 const matchId = params.get("id");
 
 fetch("data.json")
-.then(res => res.json())
+.then(response => response.json())
 .then(data => {
-
 const game = data.games.find(g => g.id === matchId);
+const matchBox = document.getElementById("match");
 
 if (!game) {
-document.getElementById("match").innerHTML = "Match not found";
+matchBox.innerHTML = `
+<div class="card">
+<h1>Match not found</h1>
+<p class="empty">This match could not be found in data.json.</p>
+</div>
+`;
 return;
 }
 
-document.getElementById("match").innerHTML = `
+const goals = game.goals || [];
+const penalties = game.penalties || [];
+
+matchBox.innerHTML = `
 <div class="card">
 <h1>MK Thunder vs ${game.opponent}</h1>
 <div class="score">${game.gf} - ${game.ga}</div>
@@ -71,9 +136,84 @@ document.getElementById("match").innerHTML = `
 ${game.date} • ${game.homeAway} • ${game.competition} • ${game.result}
 </div>
 </div>
+
+<div class="card">
+<h2>Match Summary</h2>
+<p>${game.summary || "No match summary added yet."}</p>
+</div>
+
+<div class="card">
+<h2>Goals</h2>
+${goals.length > 0 ? `
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Time</th>
+<th>Scorer</th>
+<th>Assist 1</th>
+<th>Assist 2</th>
+</tr>
+</thead>
+<tbody>
+${goals.map(goal => `
+<tr>
+<td>${goal.period || ""}</td>
+<td>${goal.time || ""}</td>
+<td>${goal.scorer || ""}</td>
+<td>${goal.assist1 || ""}</td>
+<td>${goal.assist2 || ""}</td>
+</tr>
+`).join("")}
+</tbody>
+</table>
+</div>
+` : `<p class="empty">No goals added yet.</p>`}
+</div>
+
+<div class="card">
+<h2>Penalties</h2>
+${penalties.length > 0 ? `
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Time</th>
+<th>Player</th>
+<th>Penalty</th>
+<th>Minutes</th>
+</tr>
+</thead>
+<tbody>
+${penalties.map(penalty => `
+<tr>
+<td>${penalty.period || ""}</td>
+<td>${penalty.time || ""}</td>
+<td>${penalty.player || ""}</td>
+<td>${penalty.penalty || ""}</td>
+<td>${penalty.minutes || ""}</td>
+</tr>
+`).join("")}
+</tbody>
+</table>
+</div>
+` : `<p class="empty">No penalties added yet.</p>`}
+</div>
+`;
+})
+.catch(error => {
+console.error(error);
+document.getElementById("match").innerHTML = `
+<div class="card">
+<h1>Could not load match data</h1>
+<p class="empty">Check data.json for a missing comma or bracket.</p>
+</div>
 `;
 });
 </script>
 
 </body>
 </html>
+
