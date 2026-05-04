@@ -8,11 +8,11 @@
 "assists": 0,
 "points": 0,
 "pim": 0,
-  "number":74,
-  "position": "Defence",
-  "shoots": "Right",
-  "Status": "Active",
-  "bio": "Captain"
+"number": 74,
+"position": "Defence",
+"shoots": "Right",
+"status": "Active",
+"bio": "Captain"
 }
 ],
 
@@ -25,149 +25,21 @@
 },
 
 "leagueTable": [
-{
-"pos": 1,
-"team": "Guildford Phoenix",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-{
-"pos": 2,
-"team": "Peterborough Phantoms 2",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-{
-"pos": 3,
-"team": "Haringey Huskies",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-{
-"pos": 4,
-"team": "MK Thunder",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-  {
-"pos": 5,
-"team": "Invicta Mustangs",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-  {
-"pos": 6,
-"team": "Cardiff Canucks",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-  {
-"pos": 7,
-"team": "Oxford Rising Stars",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-  {
-"pos": 8,
-"team": "Bristol Pitbulls 2",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-  {
-"pos": 9,
-"team": "Slough Spitfires",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-  {
-"pos": 10,
-"team": "Chelmsford Warriors",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-  {
-"pos": 11,
-"team": "Solent Junior Devils",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-},
-{
-"pos": 12,
-"team": "Lee Valley Lions",
-"gp": 0,
-"w": 0,
-"otw": 0,
-"otl": 0,
-"l": 0,
-"gf": 0,
-"ga": 0,
-"pts": 0
-}
+{ "pos": 1, "team": "Guildford Phoenix", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 2, "team": "Peterborough Phantoms 2", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 3, "team": "Haringey Huskies", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 4, "team": "MK Thunder", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 5, "team": "Invicta Mustangs", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 6, "team": "Cardiff Canucks", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 7, "team": "Oxford Rising Stars", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 8, "team": "Bristol Pitbulls 2", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 9, "team": "Slough Spitfires", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 10, "team": "Chelmsford Warriors", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 11, "team": "Solent Junior Devils", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 },
+{ "pos": 12, "team": "Lee Valley Lions", "gp": 0, "w": 0, "otw": 0, "otl": 0, "l": 0, "gf": 0, "ga": 0, "points": 0 }
 ]
 }
+
+
+
+Sent from Gmail Mobile
