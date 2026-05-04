@@ -9,10 +9,10 @@
 "points":0 ,
 "pim": 0 ,
   "number":74,
-  "position": "Forward",
+  "position": "Defence",
   "shoots": "Right",
   "Status": "Active",
-  "bio": "Lots of info will go here"
+  "bio": "Captain"
 }
 ],
 
@@ -52,14 +52,14 @@
 {
 "pos": 2,
 "team": "Peterborough Phantoms 2",
-"gp": 22,
-"w": 19,
+"gp": 0,
+"w": 0,
 "otw": 0,
 "otl": 0,
-"l": 3,
-"gf": 153,
-"ga": 53,
-"pts": 57
+"l": 0,
+"gf": 0,
+"ga": 0,
+"pts": 0
 },
 {
 "pos": 3,
