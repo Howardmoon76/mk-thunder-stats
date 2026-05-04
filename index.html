@@ -6,7 +6,9 @@
 <title>MK Thunder Stats</title>
 
 <style>
-* { box-sizing: border-box; }
+* {
+box-sizing: border-box;
+}
 
 body {
 margin: 0;
@@ -16,18 +18,6 @@ background:
 radial-gradient(circle at top, rgba(35, 185, 205, 0.15), transparent 35%),
 linear-gradient(180deg, #061116 0%, #0a1f27 45%, #0d2a33 100%);
 min-height: 100vh;
-}
-
-/* NEW */
-.result-link {
-color: #ffffff;
-text-decoration: none;
-display: block;
-}
-.result-link:hover .result-title,
-.result-link:hover .stat-name {
-color: #00e0c6;
-text-decoration: underline;
 }
 
 header {
@@ -107,7 +97,7 @@ border: 1px solid rgba(30, 199, 217, 0.22);
 border-radius: 18px;
 padding: 20px;
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
-transition: 0.2s ease;
+transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
@@ -116,7 +106,9 @@ border-color: rgba(30, 199, 217, 0.42);
 box-shadow: 0 0 15px rgba(0, 224, 198, 0.35);
 }
 
-.hero-card { min-height: 190px; }
+.hero-card {
+min-height: 190px;
+}
 
 .card h2 {
 margin: 0 0 16px;
@@ -126,9 +118,152 @@ text-transform: uppercase;
 letter-spacing: 0.7px;
 }
 
-.stat-name { font-size: 2rem; font-weight: 800; margin-bottom: 10px; }
-.stat-value { font-size: 3rem; font-weight: 900; color: #1ec7d9; }
-.sub-text { color: #d7edf0; }
+.stat-name {
+font-size: 2rem;
+font-weight: 800;
+margin-bottom: 10px;
+line-height: 1.1;
+}
+
+.stat-value {
+font-size: 3rem;
+font-weight: 900;
+color: #1ec7d9;
+line-height: 1;
+margin-bottom: 10px;
+}
+
+.sub-text {
+color: #d7edf0;
+font-size: 1rem;
+}
+
+.mini-name {
+font-size: 1.3rem;
+font-weight: 800;
+margin-bottom: 8px;
+line-height: 1.1;
+}
+
+.mini-value {
+font-size: 2.2rem;
+font-weight: 900;
+color: #1ec7d9;
+margin-bottom: 8px;
+line-height: 1;
+}
+
+.mini-label {
+color: #c8e2e7;
+font-size: 0.95rem;
+}
+
+.leaders-list .leader-row,
+.results-list .result-row {
+padding: 14px 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.leaders-list .leader-row:last-child,
+.results-list .result-row:last-child {
+border-bottom: none;
+}
+
+.leader-name,
+.result-title {
+font-weight: 700;
+font-size: 1.05rem;
+margin-bottom: 4px;
+}
+
+.leader-stats,
+.result-meta {
+color: #c9e1e6;
+font-size: 0.95rem;
+}
+
+.result-link {
+color: #ffffff;
+text-decoration: none;
+display: block;
+}
+
+.result-link:hover .result-title,
+.result-link:hover .stat-name {
+color: #00e0c6;
+text-decoration: underline;
+}
+
+.player-link {
+color: #ffffff;
+text-decoration: none;
+transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.player-link:hover {
+color: #00e0c6;
+text-shadow: 0 0 8px rgba(0, 224, 198, 0.5);
+text-decoration: underline;
+}
+
+.footer-note {
+text-align: center;
+color: #8fb8bf;
+margin-top: 28px;
+font-size: 0.9rem;
+}
+
+.top-player {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+}
+
+.mini-player {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 14px;
+}
+
+.player-img {
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 50%;
+border: 2px solid #00e0c6;
+box-shadow: 0 0 15px #00e0c6;
+flex-shrink: 0;
+}
+
+.mini-player-img {
+width: 72px;
+height: 72px;
+object-fit: cover;
+border-radius: 50%;
+border: 2px solid #00e0c6;
+box-shadow: 0 0 12px rgba(0, 224, 198, 0.75);
+flex-shrink: 0;
+}
+
+.show-more-btn {
+margin-top: 16px;
+background: transparent;
+color: #00e0c6;
+border: 1px solid rgba(0, 224, 198, 0.45);
+border-radius: 10px;
+padding: 10px 14px;
+font-size: 0.95rem;
+font-weight: 700;
+cursor: pointer;
+transition: 0.2s ease;
+}
+
+.show-more-btn:hover {
+background: rgba(0, 224, 198, 0.08);
+box-shadow: 0 0 12px rgba(0, 224, 198, 0.2);
+}
 
 .result-badge {
 display: inline-block;
@@ -136,109 +271,427 @@ padding: 4px 10px;
 border-radius: 999px;
 font-size: 0.75rem;
 font-weight: 800;
+letter-spacing: 0.5px;
 margin-right: 8px;
 color: #fff;
+vertical-align: middle;
 }
 
-.badge-win { background: #00e676; }
-.badge-loss { background: #ff5252; }
-.badge-ot { background: #ffc107; color: #000; }
-
-.result-row {
-padding: 14px 0;
-border-bottom: 1px solid rgba(255,255,255,0.08);
+.badge-win {
+background: #00e676;
+box-shadow: 0 0 10px rgba(0, 230, 118, 0.6);
 }
 
-.result-title { font-weight: 700; }
-.result-meta { color: #c9e1e6; font-size: 0.95rem; }
+.badge-loss {
+background: #ff5252;
+box-shadow: 0 0 10px rgba(255, 82, 82, 0.6);
+}
 
-.table-wrap { overflow-x: auto; }
-.stats-table { width: 100%; border-collapse: collapse; }
-.stats-table th, .stats-table td {
-padding: 10px;
+.badge-ot {
+background: #ffc107;
+color: #000;
+box-shadow: 0 0 10px rgba(255, 193, 7, 0.6);
+}
+
+.league-card {
+margin-top: 0;
+}
+
+.table-wrap {
+overflow-x: auto;
+}
+
+.stats-table {
+width: 100%;
+border-collapse: collapse;
+min-width: 700px;
+}
+
+.stats-table th,
+.stats-table td {
+padding: 12px 10px;
 text-align: center;
-border-bottom: 1px solid rgba(255,255,255,0.08);
+border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.mk-row { background: rgba(0,224,198,0.08); }
 
+.stats-table th {
+color: #9ee9f2;
+font-size: 0.9rem;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.stats-table td:first-child,
+.stats-table th:first-child {
+text-align: center;
+width: 60px;
+}
+
+.stats-table td:nth-child(2),
+.stats-table th:nth-child(2) {
+text-align: left;
+min-width: 180px;
+}
+
+.stats-table tr:hover {
+background: rgba(0, 224, 198, 0.06);
+}
+
+.mk-row {
+background: rgba(0, 224, 198, 0.08);
+box-shadow: inset 3px 0 0 #00e0c6;
+font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+.hero-grid,
+.leaders-grid,
+.bottom-grid {
+grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 600px) {
+.logo {
+width: 140px;
+}
+
+header h1 {
+font-size: 2rem;
+}
+
+.stat-name {
+font-size: 1.6rem;
+}
+
+.stat-value {
+font-size: 2.4rem;
+}
+
+.mini-name {
+font-size: 1.1rem;
+}
+
+.mini-value {
+font-size: 1.8rem;
+}
+
+.top-player,
+.mini-player {
+flex-direction: column;
+align-items: flex-start;
+}
+}
 </style>
 </head>
-
 <body>
+<header>
+<div class="header-content">
+<img src="logo.png" alt="MK Thunder Logo" class="logo">
+<div>
+<h1>MK Thunder Stats</h1>
+<p>Live team leaders, results and season stats</p>
+</div>
+</div>
+<div class="header-divider"></div>
+</header>
 
 <div class="container">
-
 <div class="hero-grid">
+<div class="card hero-card">
+<h2>Top Scorer</h2>
+<div id="topScorer">Loading...</div>
+</div>
+
 <div class="card hero-card">
 <h2>Latest Result</h2>
 <div id="latestGame">Loading...</div>
+</div>
+
+<div class="card hero-card">
+<h2>Next Game</h2>
+<div id="nextGame">Loading...</div>
+</div>
+</div>
+
+<div class="leaders-grid">
+<div class="card">
+<h2>Points Leader</h2>
+<div id="pointsLeader">Loading...</div>
+</div>
+
+<div class="card">
+<h2>Goals Leader</h2>
+<div id="goalsLeader">Loading...</div>
+</div>
+
+<div class="card">
+<h2>PIM Leader</h2>
+<div id="pimLeader">Loading...</div>
 </div>
 </div>
 
 <div class="bottom-grid">
 <div class="card">
+<h2>Team Leaders</h2>
+<div id="leaders" class="leaders-list">Loading...</div>
+</div>
+
+<div class="card">
 <h2>Recent Results</h2>
-<div id="recentResults">Loading...</div>
+<div id="recentResults" class="results-list">Loading...</div>
 </div>
 </div>
 
+<div class="card league-card">
+<h2>League Table</h2>
+<div id="leagueTable">Loading...</div>
+</div>
+
+<div class="footer-note">
+Live data pulled from your JSON file
+</div>
 </div>
 
 <script>
 fetch("data.json")
-.then(res => res.json())
+.then(response => {
+if (!response.ok) {
+throw new Error("Could not load data.json");
+}
+return response.json();
+})
 .then(data => {
-
+const players = [...data.players];
 const games = data.games || [];
+const leagueTable = data.leagueTable || [];
 
+players.sort((a, b) => b.points - a.points);
+
+const topPlayer = players[0];
+const goalsLeader = [...players].sort((a, b) => b.goals - a.goals)[0];
+const pimLeader = [...players].sort((a, b) => b.pim - a.pim)[0];
+
+document.getElementById("topScorer").innerHTML = `
+<div class="top-player">
+<div>
+<div class="stat-name">${topPlayer.name}</div>
+<div class="stat-value">${topPlayer.points} pts</div>
+<div class="sub-text">${topPlayer.goals} goals • ${topPlayer.assists} assists</div>
+</div>
+<img src="${topPlayer.image || "placeholder.png"}" alt="${topPlayer.name}" class="player-img">
+</div>
+`;
+
+document.getElementById("pointsLeader").innerHTML = `
+<div class="mini-player">
+<div>
+<div class="mini-name">${topPlayer.name}</div>
+<div class="mini-value">${topPlayer.points}</div>
+<div class="mini-label">Points</div>
+</div>
+<img src="${topPlayer.image || "placeholder.png"}" alt="${topPlayer.name}" class="mini-player-img">
+</div>
+`;
+
+document.getElementById("goalsLeader").innerHTML = `
+<div class="mini-player">
+<div>
+<div class="mini-name">${goalsLeader.name}</div>
+<div class="mini-value">${goalsLeader.goals}</div>
+<div class="mini-label">Goals</div>
+</div>
+<img src="${goalsLeader.image || "placeholder.png"}" alt="${goalsLeader.name}" class="mini-player-img">
+</div>
+`;
+
+document.getElementById("pimLeader").innerHTML = `
+<div class="mini-player">
+<div>
+<div class="mini-name">${pimLeader.name}</div>
+<div class="mini-value">${pimLeader.pim}</div>
+<div class="mini-label">PIM</div>
+</div>
+<img src="${pimLeader.image || "placeholder.png"}" alt="${pimLeader.name}" class="mini-player-img">
+</div>
+`;
+
+const leadersContainer = document.getElementById("leaders");
+let showAllLeaders = false;
+
+function renderLeaders() {
+const displayedPlayers = showAllLeaders ? players : players.slice(0, 5);
+
+leadersContainer.innerHTML = `
+${displayedPlayers.map(player => `
+<div class="leader-row">
+<div class="leader-name">
+<a class="player-link" href="player.html?name=${encodeURIComponent(player.name)}">${player.name}</a>
+</div>
+<div class="leader-stats">
+GP: ${player.gp} | G: ${player.goals} | A: ${player.assists} | PTS: ${player.points} | PIM: ${player.pim}
+</div>
+</div>
+`).join("")}
+${players.length > 5 ? `
+<button class="show-more-btn" id="toggleLeadersBtn">
+${showAllLeaders ? "Show Less" : "Show More"}
+</button>
+` : ""}
+`;
+
+const toggleBtn = document.getElementById("toggleLeadersBtn");
+if (toggleBtn) {
+toggleBtn.addEventListener("click", () => {
+showAllLeaders = !showAllLeaders;
+renderLeaders();
+});
+}
+}
+
+renderLeaders();
+
+if (games.length > 0) {
 const latestGame = games[games.length - 1];
 
+let latestBadgeClass = "badge-loss";
+let latestBadgeText = "L";
+
+if (latestGame.result === "W") {
+latestBadgeClass = "badge-win";
+latestBadgeText = "W";
+}
+
+if (latestGame.result === "OTW" || latestGame.result === "OTL") {
+latestBadgeClass = "badge-ot";
+latestBadgeText = "OT";
+}
+
+document.getElementById("latestGame").innerHTML = `
+<a class="result-link" href="match.html?id=${latestGame.id}">
+<div class="stat-name">
+<span class="result-badge ${latestBadgeClass}">${latestBadgeText}</span>
+${latestGame.opponent}
+</div>
+<div class="stat-value">${latestGame.gf} - ${latestGame.ga}</div>
+<div class="sub-text">${latestGame.homeAway} • ${latestGame.competition} • ${latestGame.result}</div>
+</a>
+`;
+} else {
+document.getElementById("latestGame").innerHTML = `
+<div class="stat-name">No results yet</div>
+<div class="sub-text">Add games to your data.json</div>
+`;
+}
+
+if (data.nextGame) {
+const nextGame = data.nextGame;
+
+document.getElementById("nextGame").innerHTML = `
+<div class="stat-name">${nextGame.opponent}</div>
+<div class="stat-value">${nextGame.faceoff}</div>
+<div class="sub-text">${nextGame.date} • ${nextGame.homeAway} • ${nextGame.competition}</div>
+`;
+} else {
+document.getElementById("nextGame").innerHTML = `
+<div class="stat-name">No game listed</div>
+<div class="sub-text">Add a nextGame section to your data.json</div>
+`;
+}
+
+const recentGames = [...games].reverse().slice(0, 5);
+
+if (recentGames.length > 0) {
+document.getElementById("recentResults").innerHTML = recentGames.map(game => {
 let badgeClass = "badge-loss";
 let badgeText = "L";
 
-if (latestGame.result === "W") {
+if (game.result === "W") {
 badgeClass = "badge-win";
 badgeText = "W";
 }
-if (latestGame.result.includes("OT")) {
+
+if (game.result === "OTW" || game.result === "OTL") {
 badgeClass = "badge-ot";
 badgeText = "OT";
 }
 
-/* CLICKABLE LATEST */
-document.getElementById("latestGame").innerHTML = `
-<a class="result-link" href="match.html?id=${latestGame.id}">
-<div class="stat-name">
-<span class="result-badge ${badgeClass}">${badgeText}</span>
-${latestGame.opponent}
-</div>
-<div class="stat-value">${latestGame.gf} - ${latestGame.ga}</div>
-<div class="sub-text">${latestGame.homeAway} • ${latestGame.competition}</div>
-</a>
-`;
-
-/* CLICKABLE RECENT */
-document.getElementById("recentResults").innerHTML = games.slice().reverse().map(game => {
-
-let bClass = game.result === "W" ? "badge-win" : "badge-loss";
-if (game.result.includes("OT")) bClass = "badge-ot";
-
 return `
 <a class="result-link result-row" href="match.html?id=${game.id}">
 <div class="result-title">
-<span class="result-badge ${bClass}">${game.result}</span>
+<span class="result-badge ${badgeClass}">${badgeText}</span>
 ${game.date} — ${game.opponent}
 </div>
 <div class="result-meta">
-${game.gf}-${game.ga}
+${game.homeAway} | ${game.competition} | ${game.gf}-${game.ga} (${game.result})
 </div>
 </a>
 `;
-
 }).join("");
+} else {
+document.getElementById("recentResults").innerHTML = `
+<div class="result-row">
+<div class="result-title">No recent results yet</div>
+<div class="result-meta">Add games to your data.json</div>
+</div>
+`;
+}
 
+if (leagueTable.length > 0) {
+document.getElementById("leagueTable").innerHTML = `
+<div class="table-wrap">
+<table class="stats-table">
+<thead>
+<tr>
+<th>Pos</th>
+<th>Team</th>
+<th>GP</th>
+<th>W</th>
+<th>OTW</th>
+<th>OTL</th>
+<th>L</th>
+<th>GF</th>
+<th>GA</th>
+<th>PTS</th>
+</tr>
+</thead>
+<tbody>
+${leagueTable.map(team => `
+<tr class="${team.team === 'MK Thunder' ? 'mk-row' : ''}">
+<td>${team.pos}</td>
+<td>${team.team}</td>
+<td>${team.gp}</td>
+<td>${team.w}</td>
+<td>${team.otw}</td>
+<td>${team.otl}</td>
+<td>${team.l}</td>
+<td>${team.gf}</td>
+<td>${team.ga}</td>
+<td>${team.pts}</td>
+</tr>
+`).join("")}
+</tbody>
+</table>
+</div>
+`;
+} else {
+document.getElementById("leagueTable").innerHTML = `
+<div class="sub-text">No league table data added yet.</div>
+`;
+}
+})
+.catch(error => {
+console.error(error);
+document.getElementById("topScorer").textContent = "Could not load data.";
+document.getElementById("latestGame").textContent = "Could not load data.";
+document.getElementById("nextGame").textContent = "Could not load data.";
+document.getElementById("pointsLeader").textContent = "Could not load data.";
+document.getElementById("goalsLeader").textContent = "Could not load data.";
+document.getElementById("pimLeader").textContent = "Could not load data.";
+document.getElementById("leaders").textContent = "Could not load data.";
+document.getElementById("recentResults").textContent = "Could not load data.";
+document.getElementById("leagueTable").textContent = "Could not load data.";
 });
 </script>
-
 </body>
 </html>
