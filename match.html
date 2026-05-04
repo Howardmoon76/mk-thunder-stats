@@ -182,6 +182,7 @@ ${penalties.length > 0 ? `
 <thead>
 <tr>
 <th>Period</th>
+<th>Team</th>
 <th>Time</th>
 <th>Player</th>
 <th>Penalty</th>
@@ -192,6 +193,7 @@ ${penalties.length > 0 ? `
 ${penalties.map(penalty => `
 <tr>
 <td>${penalty.period || ""}</td>
+<td>${team.period || ""}</td>
 <td>${penalty.time || ""}</td>
 <td>${penalty.player || ""}</td>
 <td>${penalty.penalty || ""}</td>
