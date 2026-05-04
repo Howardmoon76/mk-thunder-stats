@@ -18,12 +18,13 @@
 
 "games": [
 {
+  "id": "mk-cardiff-2026-03-15",
 "date": "15/03/2026",
 "opponent": "Cardiff Canucks",
 "competition": "League",
-"homeAway": "Home",
-"gf": 2,
-"ga": 4,
+"homeAway": "Away",
+"gf": 4,
+"ga": 2,
 "result": "L"
 }
 ],
