@@ -26,6 +26,26 @@
 "gf": 4,
 "ga": 2,
 "result": "L"
+
+  "goals": [
+{
+"period": "1",
+"time": "12:34",
+"scorer": "Dom Wealthall",
+"assist1": "Player One",
+"assist2": "Player Two"
+}
+],
+"penalties": [
+{
+"period": "2",
+"time": "08:20",
+"player": "Dom Wealthall",
+"penalty": "Hooking",
+"minutes": 2
+}
+],
+"summary": "MK Thunder played a strong away game and controlled the pace."
 }
 ],
 
