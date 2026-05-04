@@ -53,7 +53,7 @@
 "assist2": "Player Two"
 },
     {
-"period": "1",
+"period": "2",
 "team": "MK Thunder",
 "time": "12:34",
 "scorer": "Dom Wealthall",
@@ -61,16 +61,16 @@
 "assist2": "Player Two"
 },
     {
-"period": "1",
-"team": "MK Thunder",
+"period": "2",
+"team": "Cardiff ",
 "time": "12:34",
 "scorer": "Dom Wealthall",
 "assist1": "Player One",
 "assist2": "Player Two"
 },
 {
-"period": "1",
-"team": "MK Thunder",
+"period": "3",
+"team": "Cardiff",
 "time": "12:34",
 "scorer": "Dom Wealthall",
 "assist1": "Player One",
@@ -127,26 +127,26 @@
 {
 "pos": 3,
 "team": "Haringey Huskies",
-"gp": 22,
-"w": 13,
-"otw": 1,
-"otl": 2,
-"l": 6,
-"gf": 103,
-"ga": 70,
-"pts": 43
+"gp": 0,
+"w": 0,
+"otw": 0,
+"otl": 0,
+"l": 0,
+"gf": 0,
+"ga": 0,
+"pts": 0
 },
 {
 "pos": 4,
 "team": "MK Thunder",
-"gp": 22,
-"w": 12,
-"otw": 1,
-"otl": 4,
-"l": 5,
-"gf": 107,
-"ga": 82,
-"pts": 42
+"gp": 0,
+"w": 0,
+"otw": 0,
+"otl": 0,
+"l": 0,
+"gf": 0,
+"ga": 0,
+"pts": 0
 },
   {
 "pos": 5,
