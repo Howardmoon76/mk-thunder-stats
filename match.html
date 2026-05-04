@@ -150,6 +150,7 @@ ${goals.length > 0 ? `
 <thead>
 <tr>
 <th>Period</th>
+<th>Team</th>
 <th>Time</th>
 <th>Scorer</th>
 <th>Assist 1</th>
@@ -160,6 +161,7 @@ ${goals.length > 0 ? `
 ${goals.map(goal => `
 <tr>
 <td>${goal.period || ""}</td>
+<td>${goal.team || ""}</td>
 <td>${goal.time || ""}</td>
 <td>${goal.scorer || ""}</td>
 <td>${goal.assist1 || ""}</td>
