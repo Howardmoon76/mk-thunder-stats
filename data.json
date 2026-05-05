@@ -78,6 +78,14 @@
 }
 ],
 "penalties": [
+  {
+"period": "2",
+"team": "MK Thunder",
+"time": "08:20",
+"player": "Dom Wealthall",
+"penalty": "Roughing",
+"minutes": 2
+},
 {
 "period": "1",
 "team": "MK Thunder",
