@@ -95,6 +95,30 @@
 "minutes": 2
 }
 ],
+  "goalies": [
+{
+"team": "MK Thunder",
+"number": 29,
+"name": "Aaron Burton",
+"toi": "65:00",
+"period1": "0-21",
+"period2": "0-17",
+"period3": "4-19",
+"ot": "0-1",
+"total": "4-58"
+},
+{
+"team": "Invicta Mustangs",
+"number": 1,
+"name": "Heath Prentice",
+"toi": "65:00",
+"period1": "2-8",
+"period2": "1-10",
+"period3": "1-11",
+"ot": "0-6",
+"total": "4-35"
+}
+],
 "summary": "MK Thunder played a strong away game and controlled the pace."
 }
 ],
