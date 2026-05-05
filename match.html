@@ -127,6 +127,7 @@ return;
 
 const goals = game.goals || [];
 const penalties = game.penalties || [];
+const goalies = game.goalies || [];
 
 matchBox.innerHTML = `
 <div class="card">
@@ -205,7 +206,45 @@ ${penalties.map(penalty => `
 </div>
 ` : `<p class="empty">No penalties added yet.</p>`}
 </div>
+<div class="card">
+<h2>Goalie Summary</h2>
+${goalies.length > 0 ? `
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Team</th>
+<th>#</th>
+<th>Goalie</th>
+<th>TOI</th>
+<th>1st</th>
+<th>2nd</th>
+<th>3rd</th>
+<th>OT</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+${goalies.map(goalie => `
+<tr>
+<td>${goalie.team || ""}</td>
+<td>${goalie.number || ""}</td>
+<td>${goalie.name || ""}</td>
+<td>${goalie.toi || ""}</td>
+<td>${goalie.period1 || ""}</td>
+<td>${goalie.period2 || ""}</td>
+<td>${goalie.period3 || ""}</td>
+<td>${goalie.ot || ""}</td>
+<td>${goalie.total || ""}</td>
+</tr>
+`).join("")}
+</tbody>
+</table>
+</div>
+` : `<p class="empty">No goalie data added yet.</p>`}
+</div>
 `;
+
 })
 .catch(error => {
 console.error(error);
