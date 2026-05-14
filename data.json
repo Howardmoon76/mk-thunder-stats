@@ -54,36 +54,44 @@
 },
     {
 "period": "2",
-"team": "MK Thunder",
-"time": "12:34",
-"scorer": "Dom Wealthall",
-"assist1": "Player One",
-"assist2": "Player Two"
+"team": "Cardiff Canucks",
+"time": "23:10",
+"scorer": "Brad Craiper",
+"assist1": "",
+"assist2": ""
 },
     {
 "period": "2",
 "team": "Cardiff Canucks ",
-"time": "12:34",
-"scorer": "Dom Wealthall",
-"assist1": "Player One",
-"assist2": "Player Two"
+"time": "29:20",
+"scorer": "Sam Davies ",
+"assist1": "Giacomo Raffaelli",
+"assist2": ""
+},
+   {
+"period": "3",
+"team": "MK Thunder ",
+"time": "48:04",
+"scorer": "Josh Blackwood",
+"assist1": "Xander Robinson",
+"assist2": ""
 },
 {
-"period": "3",
+"period": "4",
 "team": "Cardiff Canucks",
-"time": "12:34",
-"scorer": "Dom Wealthall",
-"assist1": "Player One",
-"assist2": "Player Two"
+"time": "62:12",
+"scorer": "Carter Lloyd",
+"assist1": "Joe Morris",
+"assist2": ""
 }
 ],
 "penalties": [
   {
-"period": "2",
-"team": "MK Thunder",
-"time": "08:20",
-"player": "Dom Wealthall",
-"penalty": "Roughing",
+"period": "1",
+"team": "Cardiff Canucks",
+"time": "16:31",
+"player": "Joe Morris",
+"penalty": "Slashing",
 "minutes": 2
 },
 {
