@@ -207,6 +207,13 @@ ${penalties.map(penalty => `
 ` : `<p class="empty">No penalties added yet.</p>`}
 </div>
 <div class="card">
+<h2>PENALTY BREAKDOWN</h2>
+
+<div style="max-width:400px; margin:auto;">
+<canvas id="penaltyChart"></canvas>
+</div>
+</div>
+<div class="card">
 <h2>Goalie Summary</h2>
 ${goalies.length > 0 ? `
 <div class="table-wrap">
