@@ -253,6 +253,41 @@ ${goalies.map(goalie => `
 `;
 
 })
+ })
+
+const penaltyTotals = {};
+
+penalties.forEach(p => {
+const type = p.penalty || "Other";
+const mins = Number(p.minutes) || 0;
+
+penaltyTotals[type] = (penaltyTotals[type] || 0) + mins;
+});
+
+const penaltyCtx = document.getElementById("penaltyChart");
+
+if (penaltyCtx && Object.keys(penaltyTotals).length > 0) {
+new Chart(penaltyCtx, {
+type: "doughnut",
+data: {
+labels: Object.keys(penaltyTotals),
+datasets: [{
+data: Object.values(penaltyTotals),
+backgroundColor: [
+"#00f5ff",
+"#14b8a6",
+"#38bdf8",
+"#6366f1",
+"#a78bfa",
+"#22d3ee"
+],
+borderColor: "#0f766e",
+borderWidth: 2
+}]
+}
+});
+}
+
 .catch(error => {
 console.error(error);
 document.getElementById("match").innerHTML = `
