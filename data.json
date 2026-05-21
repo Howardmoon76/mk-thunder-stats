@@ -1,5 +1,19 @@
 {
 "players": [
+    {
+"name": "Sam Peters",
+"image": "dom.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":9,
+  "position": "Forward",
+  "shoots": "N/A",
+  "status": "Active",
+  "bio": "great all around player and great guy"
+}
   {
 "name": "Dominic Wealthall",
 "image": "dom.png",
