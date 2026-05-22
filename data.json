@@ -13,6 +13,20 @@
   "shoots": "N/A",
   "status": "Active",
   "bio": "A dependable forward with a strong team-first mentality, Sam Peters brings energy, consistency, and commitment every time he steps onto the ice. Contributing 12 points in 22 games last season, he proved his value as a balanced offensive threat while also doing the hard work away from the puck."
+}, 
+    {
+"name": "Charlie Conroy",
+"image": "place.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":24,
+  "position": "Forward",
+  "shoots": "Right",
+  "status": "Active",
+  "bio": ""
 },
   {
 "name": "Dominic Wealthall",
