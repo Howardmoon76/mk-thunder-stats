@@ -274,6 +274,23 @@ height: 200px;
 const params = new URLSearchParams(window.location.search);
 const playerName = params.get("name");
 
+mark ward <markward76@gmail.com>
+11:25 (1 minute ago)
+to me
+
+const params = new URLSearchParams(window.location.search);
+const playerName = params.get("name");
+
+const flags = {
+"Great Britain": "🇬🇧",
+"Canada": "🇨🇦",
+"Latvia": "🇱🇻",
+"Switzerland": "🇨🇭",
+"USA": "🇺🇸",
+"Czech Republic": "🇨🇿",
+"Slovakia": "🇸🇰"
+};
+  
 fetch("data.json")
 .then(response => {
 if (!response.ok) {
@@ -318,7 +335,7 @@ profileContainer.innerHTML = `
 <div class="player-name">${player.name}</div>
 <div class="player-meta"><strong>Number:</strong> ${player.number || "TBC"}</div>
 <div class="player-meta"><strong>Position:</strong> ${player.position || "TBC"}</div>
-<div class="player-meta"><strong>Nationality:</strong> ${player.Nationality || "TBC"}</div>
+<div class="player-meta"><strong>Nationality:</strong> ${flags[player.Nationality] || ""} ${player.Nationality || "TBC"}</div>
 <div class="player-meta"><strong>Status:</strong> ${player.status || "Active"}</div>
 <div class="player-bio">${player.bio || "Player bio coming soon."}</div>
 </div>
