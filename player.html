@@ -364,7 +364,7 @@ profileContainer.innerHTML = `
 <div class="info-row"><span class="info-label">Name:</span> ${player.name}</div>
 <div class="info-row"><span class="info-label">Number:</span> ${player.number || "TBC"}</div>
 <div class="info-row"><span class="info-label">Position:</span> ${player.position || "TBC"}</div>
-<div class="info-row"><span class="info-label">Nationality:</span> ${flags[player.Nationality] || ""} ${player.Nationality || "TBC"}</div>
+<div class="player-meta"><span class="info-label">Nationality:</span><img src="flags/${flags[player.Nationality]}" width="20" style="vertical-align:middle;margin-right:5px;">${player.Nationality || "TBC"}</div>
 </div>
 
 <div class="info-box">
