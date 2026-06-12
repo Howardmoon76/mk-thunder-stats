@@ -336,26 +336,22 @@ profileContainer.innerHTML = `
 
 <h2 class="section-title">Season Stats</h2>
 <div class="stats-grid">
-<div class="stat-box">
-<div class="stat-label">GP</div>
-<div class="stat-number">${player.gp ?? 0}</div>
-</div>
-<div class="stat-box">
-<div class="stat-label">Goals</div>
-<div class="stat-number">${player.goals ?? 0}</div>
-</div>
-<div class="stat-box">
-<div class="stat-label">Assists</div>
-<div class="stat-number">${player.assists ?? 0}</div>
-</div>
-<div class="stat-box">
-<div class="stat-label">Points</div>
-<div class="stat-number">${player.points ?? 0}</div>
-</div>
-<div class="stat-box">
-<div class="stat-label">PIM</div>
-<div class="stat-number">${player.pim ?? 0}</div>
-</div>
+${player.position === "Netminder"
+? `
+<div class="stat-box"><div class="stat-label">GP</div><div class="stat-number">${player.gp ?? 0}</div></div>
+<div class="stat-box"><div class="stat-label">Wins</div><div class="stat-number">${player.wins ?? 0}</div></div>
+<div class="stat-box"><div class="stat-label">GAA</div><div class="stat-number">${player.gaa ?? "0.00"}</div></div>
+<div class="stat-box"><div class="stat-label">SV%</div><div class="stat-number">${player.svp ?? ".000"}</div></div>
+<div class="stat-box"><div class="stat-label">PIM</div><div class="stat-number">${player.pim ?? 0}</div></div>
+`
+: `
+<div class="stat-box"><div class="stat-label">GP</div><div class="stat-number">${player.gp ?? 0}</div></div>
+<div class="stat-box"><div class="stat-label">Goals</div><div class="stat-number">${player.goals ?? 0}</div></div>
+<div class="stat-box"><div class="stat-label">Assists</div><div class="stat-number">${player.assists ?? 0}</div></div>
+<div class="stat-box"><div class="stat-label">Points</div><div class="stat-number">${player.points ?? 0}</div></div>
+<div class="stat-box"><div class="stat-label">PIM</div><div class="stat-number">${player.pim ?? 0}</div></div>
+`
+}
 </div>
 
 <div class="extra-grid">
