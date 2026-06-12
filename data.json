@@ -476,8 +476,20 @@
 "ga": 0,
 "pts": 0
 },
-{
+    {
 "pos": 12,
+"team": "Basingstoke Bison 2",
+"gp": 0,
+"w": 0,
+"otw": 0,
+"otl": 0,
+"l": 0,
+"gf": 0,
+"ga": 0,
+"pts": 0
+},
+{
+"pos": 13,
 "team": "Lee Valley Lions",
 "gp": 0,
 "w": 0,
