@@ -529,7 +529,10 @@ ${displayedPlayers.map(player => `
 <a class="player-link" href="player.html?name=${encodeURIComponent(player.name)}">${player.name}</a>
 </div>
 <div class="leader-stats">
-GP: ${player.gp} | G: ${player.goals} | A: ${player.assists} | PTS: ${player.points} | PIM: ${player.pim}
+${player.position === "Netminder"
+  ? `GP: ${player.gp} | W: ${player.wins} | GAA: ${player.gaa} | SV%: ${player.svp}`
+  : `GP: ${player.gp} | G: ${player.goals} | A: ${player.assists} | PTS: ${player.points} | PIM: ${player.pim}`
+}
 </div>
 </div>
 `).join("")}
