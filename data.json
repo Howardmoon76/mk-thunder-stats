@@ -31,24 +31,35 @@
 "status": "Active",
 "bio": ""
 },
-     {
-"name": "Mark Ward",
-"image": "mark.png",
+         {
+"name": "Lewis Smith",
+"image": "lewis.png",
 "gp": 0,
-"wins": 0,
-"gaa": "0.00",
-"svp": ".000",
 "goals": 0,
 "assists": 0,
-"points": 0,
-"pim": 0,
-"number": 76,
-"position": "Netminder",
-"Nationality": "Great Britain",
-"status": "Active",
-"bio": ""
+"points":0 ,
+"pim": 0 ,
+  "number":13,
+  "position": "Forward",
+  "Nationality": "Great Britain",
+  "status": "Active",
+  "bio": ""
 },
-      {
+       {
+"name": "Josh Furnell",
+"image": "furnell.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":33,
+  "position": "Defence",
+  "Nationality": "Great Britain",
+  "status": "Active",
+  "bio": ""
+},
+           {
 "name": "Joshua Blackwood",
 "image": "blackwood.png",
 "gp": 0,
