@@ -31,7 +31,7 @@
 "status": "Active",
 "bio": ""
 },
-         {
+     {
 "name": "Lewis Smith",
 "image": "lewis.png",
 "gp": 0,
@@ -41,6 +41,20 @@
 "pim": 0 ,
   "number":13,
   "position": "Forward",
+  "Nationality": "Great Britain",
+  "status": "Active",
+  "bio": ""
+},
+         {
+"name": "Charles Coney",
+"image": "place.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":88,
+  "position": "Defence",
   "Nationality": "Great Britain",
   "status": "Active",
   "bio": ""
