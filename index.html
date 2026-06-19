@@ -18,7 +18,13 @@ radial-gradient(circle at top, rgba(35, 185, 205, 0.15), transparent 35%),
 linear-gradient(180deg, #061116 0%, #0a1f27 45%, #0d2a33 100%);
 min-height: 100vh;
 }
-
+.team-logo {
+width: 24px;
+height: 24px;
+object-fit: contain;
+vertical-align: middle;
+margin-right: 8px;
+}
 header {
 text-align: center;
 padding: 30px 20px 10px;
@@ -661,7 +667,10 @@ document.getElementById("leagueTable").innerHTML = `
 ${leagueTable.map(team => `
 <tr class="${team.team === 'MK Thunder' ? 'mk-row' : ''}">
 <td>${team.pos}</td>
-<td>${team.team}</td>
+<td>
+<img src="logos/${team.logo}" class="team-logo">
+${team.team}
+</td>
 <td>${team.gp}</td>
 <td>${team.w}</td>
 <td>${team.otw}</td>
