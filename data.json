@@ -405,6 +405,7 @@
 {
 "pos": 2,
 "team": "Peterborough Phantoms 2",
+"logo": "Perterborough.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -417,6 +418,7 @@
 {
 "pos": 3,
 "team": "Haringey Huskies",
+"logo": "Haringey.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -442,6 +444,7 @@
   {
 "pos": 5,
 "team": "Invicta Mustangs",
+"logo": "Invicta.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -454,6 +457,7 @@
   {
 "pos": 6,
 "team": "Cardiff Canucks",
+"logo": "Cardiff.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -466,6 +470,7 @@
   {
 "pos": 7,
 "team": "Oxford Rising Stars",
+"logo": "Oxford.png",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -491,6 +496,7 @@
   {
 "pos": 9,
 "team": "Slough Spitfires",
+"logo": "Slough.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -503,6 +509,7 @@
   {
 "pos": 10,
 "team": "Chelmsford Warriors",
+"logo": "Chelmsford.png",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -515,6 +522,7 @@
   {
 "pos": 11,
 "team": "Solent Junior Devils",
+"logo": "Solent.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -527,6 +535,7 @@
     {
 "pos": 12,
 "team": "Basingstoke Bison 2",
+"logo": "Basingstoke.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
@@ -539,6 +548,7 @@
 {
 "pos": 13,
 "team": "Lee Valley Lions",
+"logo": "Lee.jpg",
 "gp": 0,
 "w": 0,
 "otw": 0,
