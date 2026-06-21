@@ -662,7 +662,36 @@ document.getElementById("recentResults").innerHTML = `
 </div>
 `;
 }
+const fixtures = games.filter(game => !game.result);
 
+const nextGameMini = fixtures[0];
+
+document.getElementById("nextGameMini").innerHTML = nextGameMini ? `
+<div class="result-row">
+<div class="result-title">
+${nextGameMini.date} — ${nextGameMini.opponent}
+</div>
+<div class="result-meta">
+${nextGameMini.homeAway} | ${nextGameMini.competition}
+</div>
+</div>
+` : `
+<div class="result-row">
+<div class="result-title">No upcoming game yet</div>
+<div class="result-meta">Add fixtures to your data.json</div>
+</div>
+`;
+
+document.getElementById("upcomingFixtures").innerHTML = fixtures.slice(0, 3).map(game => `
+<div class="result-row">
+<div class="result-title">
+${game.date} — ${game.opponent}
+</div>
+<div class="result-meta">
+${game.homeAway} | ${game.competition}
+</div>
+</div>
+`).join("");
 if (leagueTable.length > 0) {
 document.getElementById("leagueTable").innerHTML = `
 <div class="table-wrap">
