@@ -611,8 +611,8 @@ document.getElementById("latestGame").innerHTML = `
 `;
 }
 
-if (data.fixtures && data.fixtures.length > 0) {
-const nextGame = data.fixtures[0];
+if (data.nextGame) {
+const nextGame = data.nextGame;
 
 document.getElementById("nextGame").innerHTML = `
 <div class="stat-name">${nextGame.opponent}</div>
