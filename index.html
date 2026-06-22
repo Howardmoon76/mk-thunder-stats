@@ -616,12 +616,13 @@ const nextGame = data.nextGame;
 
 document.getElementById("nextGame").innerHTML = `
 <div class="stat-name">${nextGame.opponent}</div>
-<div class="stat-value">${nextGame.faceoff}</div>
+<div class="stat-value">${nextGame.faceOff}</div>
 <div class="sub-text">${nextGame.date} • ${nextGame.homeAway} • ${nextGame.competition}</div>
 `;
 }
 
 const recentGames = [...games].reverse().slice(0, 5);
+  
 
 if (recentGames.length > 0) {
 document.getElementById("recentResults").innerHTML = recentGames.map(game => {
