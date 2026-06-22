@@ -619,6 +619,12 @@ document.getElementById("nextGame").innerHTML = `
 <div class="stat-value">${nextGame.faceOff}</div>
 <div class="sub-text">${nextGame.date} • ${nextGame.homeAway} • ${nextGame.competition}</div>
 `;
+  document.getElementById("nextGameMini").innerHTML = `
+<div class="result-row">
+<div class="result-title">${nextGame.date} — ${nextGame.opponent}</div>
+<div class="result-meta">${nextGame.homeAway} | ${nextGame.competition} | ${nextGame.faceOff}</div>
+</div>
+`;
 }
 
 const recentGames = [...games].reverse().slice(0, 5);
