@@ -626,7 +626,21 @@ document.getElementById("nextGame").innerHTML = `
 </div>
 `;
 }
-
+if (data.fixtures && data.fixtures.length > 0) {
+document.getElementById("upcomingFixtures").innerHTML = data.fixtures.slice(0, 3).map(fixture => `
+<div class="result-row">
+<div class="result-title">${fixture.date} — ${fixture.opponent}</div>
+<div class="result-meta">${fixture.homeAway} | ${fixture.competition} | ${fixture.faceOff}</div>
+</div>
+`).join("");
+} else {
+document.getElementById("upcomingFixtures").innerHTML = `
+<div class="result-row">
+<div class="result-title">No upcoming fixtures yet</div>
+<div class="result-meta">Add fixtures to your data.json</div>
+</div>
+`;
+}
 const recentGames = [...games].reverse().slice(0, 5);
   
 
