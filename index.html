@@ -693,6 +693,7 @@ document.getElementById("leagueTable").innerHTML = `
 <th>L</th>
 <th>GF</th>
 <th>GA</th>
+<th>DD</th>
 <th>PTS</th>
 </tr>
 </thead>
@@ -711,6 +712,7 @@ ${team.team}
 <td>${team.l}</td>
 <td>${team.gf}</td>
 <td>${team.ga}</td>
+<td>${team.gf - team.ga}</td>
 <td>${team.pts}</td>
 </tr>
 `).join("")}
