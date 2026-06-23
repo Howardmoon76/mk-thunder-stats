@@ -615,9 +615,11 @@ if (data.nextGame) {
 const nextGame = data.nextGame;
 
 document.getElementById("nextGame").innerHTML = `
+<a href="fixture.html" style="text-decoration:none;color:inherit;">
 <div class="stat-name">${nextGame.opponent}</div>
 <div class="stat-value">${nextGame.faceOff}</div>
 <div class="sub-text">${nextGame.date} • ${nextGame.homeAway} • ${nextGame.competition}</div>
+</a>
 `;
   document.getElementById("nextGameMini").innerHTML = `
 <div class="result-row">
