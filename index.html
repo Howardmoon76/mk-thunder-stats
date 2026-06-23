@@ -621,13 +621,14 @@ document.getElementById("nextGame").innerHTML = `
 <div class="sub-text">${nextGame.date} • ${nextGame.homeAway} • ${nextGame.competition}</div>
 </a>
 `;
-  document.getElementById("nextGameMini").innerHTML = `
+ document.getElementById("nextGameMini").innerHTML = `
 <a href="fixture.html" style="text-decoration:none;color:inherit;">
 <div class="result-row">
 <div class="result-title">${nextGame.date} - ${nextGame.opponent}</div>
 <div class="result-meta">${nextGame.homeAway} | ${nextGame.competition} | ${nextGame.faceOff}</div>
 </div>
 </a>
+  `;
 }
 if (data.fixtures && data.fixtures.length > 0) {
 document.getElementById("upcomingFixtures").innerHTML = data.fixtures.slice(0, 3).map(fixture => `
