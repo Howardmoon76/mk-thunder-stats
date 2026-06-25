@@ -32,6 +32,20 @@
 "bio": ""
 },
      {
+"name": "Sam Purcell",
+"image": "purcell.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":64,
+  "position": "Forward",
+  "Nationality": "Great Britain",
+  "status": "Active",
+  "bio": ""
+},
+    {
 "name": "Lewis Smith",
 "image": "lewis.png",
 "gp": 0,
