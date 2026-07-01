@@ -14,6 +14,29 @@
   "status": "Active",
   "bio": "A dependable forward with a strong team-first mentality, Sam Peters brings energy, consistency, and commitment every time he steps onto the ice. Contributing 12 points in 22 games last season, he proved his value as a balanced offensive threat while also doing the hard work away from the puck."
 }, 
+   {
+"name": "Panther",
+"image": "panther.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":26,
+  "position": "Forward",
+  "Nationality": "Great Britain",
+  "status": "Active",
+  "bio": "The experienced veteran arrives in Milton Keynes after a long and distinguished career spent dominating sofas, windowsills, and sunny spots across the country.
+
+Known for his calm presence, intimidating stare, and elite napping ability, Panther brings a wealth of experience to the Thunder dressing room.
+
+Last season Panther recorded:
+
+365 naps
+127 treats consumed
+42 laser pointers ignored
+0 baths taken willingly"
+},    
      {
 "name": "Aaron Burton",
 "image": "aaron.PNG",
