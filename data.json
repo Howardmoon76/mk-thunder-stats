@@ -440,12 +440,12 @@
 ],
 
 "nextGame": {
-
 "date": "30/08/2026",
 "opponent": "Deeside Dragons",
 "competition": "Pre-Season",
 "homeAway": "Away",
 "faceOff": "17:15"
+"logo": "images/team-logos/dragons.png"
 },
 "fixtures": [    
 {
