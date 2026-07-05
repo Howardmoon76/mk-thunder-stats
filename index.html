@@ -617,7 +617,10 @@ const nextGame = data.nextGame;
 document.getElementById("nextGame").innerHTML = `
 <a href="fixture.html" style="text-decoration:none;color:inherit;">
 <div class="stat-name">${nextGame.opponent}</div>
+<div style="display:flex;align-items:center;justify-content:center;gap:20px;">
 <div class="stat-value">${nextGame.faceOff}</div>
+<img src="${nextGame.logo}" alt="${nextGame.opponent}" style="width:70px;height:70px;object-fit:contain;">
+</div>
 <div class="sub-text">${nextGame.date} • ${nextGame.homeAway} • ${nextGame.competition}</div>
 </a>
 `;
