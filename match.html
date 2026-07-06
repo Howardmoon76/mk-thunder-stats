@@ -100,7 +100,12 @@ display: block;
 margin: 0 auto;
 filter: drop-shadow(0 0 10px #00e0c6);
 }
-
+header {
+text-align: center;
+padding: 30px 20px 10px;
+border-bottom: 2px solid rgba(30, 199, 217, 0.35);
+background: rgba(8, 20, 26, 0.75);
+}
 .header-content {
 display: flex;
 flex-direction: column;
@@ -111,8 +116,9 @@ gap: 12px;
 
 .header-divider {
 height: 2px;
-background: #00e0c6;
-margin-top: 20px;
+width: 80%;
+margin: 20px auto 0;
+background: linear-gradient(to right, transparent, #00e0c6, transparent);
 }
 .back-link {
 display: inline-block;
