@@ -14,6 +14,20 @@
   "status": "Active",
   "bio": "A dependable forward with a strong team-first mentality, Sam Peters brings energy, consistency, and commitment every time he steps onto the ice. Contributing 12 points in 22 games last season, he proved his value as a balanced offensive threat while also doing the hard work away from the puck."
 }, 
+     {
+"name": "James Bryan",
+"image": "james.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":23,
+  "position": "Defence",
+  "Nationality": "Great Britain",
+  "status": "Active",
+  "bio": ""
+}, 
     {
 "name": "Jacob Maidment",
 "image": "plce.png",
