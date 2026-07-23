@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>MK Thunder fixtures</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MK Thunder Fixtures</title>
 
 <style>
 * {
@@ -12,13 +13,25 @@ box-sizing: border-box;
 
 body {
 margin: 0;
+min-height: 100vh;
 font-family: Arial, Helvetica, sans-serif;
 color: #ffffff;
+
 background:
-radial-gradient(circle at top, rgba(35, 185, 205, 0.15), transparent 35%),
-linear-gradient(180deg, #061116 0%, #0a1f27 45%, #0d2a33 100%);
-min-height: 100vh;
+radial-gradient(
+circle at top,
+rgba(35, 185, 205, 0.15),
+transparent 35%
+),
+linear-gradient(
+180deg,
+#061116 0%,
+#0a1f27 45%,
+#0d2a33 100%
+);
 }
+
+/* HEADER */
 
 header {
 text-align: center;
@@ -61,8 +74,17 @@ color: #cdeef0;
 height: 2px;
 width: 80%;
 margin: 20px auto 0;
-background: linear-gradient(to right, transparent, #00e0c6, transparent);
+
+background:
+linear-gradient(
+to right,
+transparent,
+#00e0c6,
+transparent
+);
 }
+
+/* PAGE */
 
 .container {
 max-width: 1100px;
@@ -74,13 +96,16 @@ padding: 28px 18px 40px;
 display: inline-block;
 margin-bottom: 18px;
 padding: 10px 16px;
+
 border-radius: 10px;
 border: 1px solid rgba(0, 224, 198, 0.45);
+
 color: #00e0c6;
 text-decoration: none;
 font-weight: 700;
-transition: 0.2s ease;
+
 background: transparent;
+transition: 0.2s ease;
 }
 
 .back-link:hover {
@@ -88,147 +113,238 @@ background: rgba(0, 224, 198, 0.08);
 box-shadow: 0 0 12px rgba(0, 224, 198, 0.2);
 }
 
-.profile-card {
-background: linear-gradient(180deg, rgba(19, 48, 57, 0.96), rgba(12, 35, 43, 0.96));
+/* FIXTURE CARD */
+
+.fixture-card {
+padding: 24px;
+
 border: 1px solid rgba(30, 199, 217, 0.22);
 border-radius: 18px;
-padding: 24px;
+
+background:
+linear-gradient(
+180deg,
+rgba(19, 48, 57, 0.96),
+rgba(12, 35, 43, 0.96)
+);
+
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
-.profile-top {
-display: grid;
-grid-template-columns: 260px 1fr;
-gap: 26px;
+.fixture-heading {
+display: flex;
 align-items: center;
-margin-bottom: 26px;
-}
-
-.profile-image-wrap {
-text-align: center;
-}
-
-.profile-image {
-width: 240px;
-height: 240px;
-max-width: 100%;
-object-fit: cover;
-border-radius: 18px;
-border: 2px solid #00e0c6;
-box-shadow: 0 0 18px rgba(0, 224, 198, 0.5);
-background: rgba(255,255,255,0.04);
-}
-
-.player-name {
-font-size: 2.5rem;
-font-weight: 900;
-line-height: 1.1;
-margin-bottom: 10px;
-}
-
-.player-meta {
-color: #d7edf0;
-font-size: 1rem;
-margin-bottom: 8px;
-}
-
-.player-bio {
-margin-top: 14px;
-font-size: 1rem;
-line-height: 1.6;
-color: #cfe6ea;
+justify-content: space-between;
+gap: 15px;
+margin-bottom: 18px;
 }
 
 .section-title {
-margin: 0 0 16px;
+margin: 0;
 color: #9ee9f2;
 font-size: 1.1rem;
 text-transform: uppercase;
 letter-spacing: 0.7px;
 }
 
-.stats-grid {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-gap: 16px;
-margin-bottom: 24px;
-}
-
-.stat-box {
-background: rgba(0, 224, 198, 0.05);
-border: 1px solid rgba(30, 199, 217, 0.2);
-border-radius: 16px;
-padding: 18px 14px;
-text-align: center;
-}
-
-.stat-label {
-font-size: 0.9rem;
+.fixture-count {
 color: #bfe4e8;
-text-transform: uppercase;
-letter-spacing: 0.5px;
-margin-bottom: 8px;
+font-size: 0.9rem;
 }
 
-.stat-number {
-font-size: 2rem;
-font-weight: 900;
-color: #1ec7d9;
-line-height: 1;
+/* FILTERS */
+
+.fixture-filters {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-bottom: 22px;
 }
 
-.extra-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 20px;
-}
+.filter-button {
+padding: 9px 15px;
 
-.info-box {
-background: rgba(255,255,255,0.03);
-border: 1px solid rgba(255,255,255,0.06);
-border-radius: 16px;
-padding: 18px;
-}
+border: 1px solid rgba(0, 224, 198, 0.35);
+border-radius: 999px;
 
-.info-row {
-margin-bottom: 10px;
-color: #d7edf0;
-line-height: 1.5;
-}
+color: #cdeef0;
+background: rgba(255, 255, 255, 0.03);
 
-.info-row:last-child {
-margin-bottom: 0;
-}
-
-.info-label {
-color: #9ee9f2;
+font-size: 0.9rem;
 font-weight: 700;
+cursor: pointer;
+
+transition: 0.2s ease;
 }
 
-.error-box {
-background: rgba(255, 82, 82, 0.08);
-border: 1px solid rgba(255, 82, 82, 0.3);
-border-radius: 16px;
-padding: 20px;
-color: #ffd7d7;
+.filter-button:hover {
+color: #ffffff;
+border-color: #00e0c6;
+background: rgba(0, 224, 198, 0.1);
 }
 
-@media (max-width: 900px) {
-.profile-top {
-grid-template-columns: 1fr;
+.filter-button.active {
+color: #061116;
+border-color: #00e0c6;
+background: #00e0c6;
+box-shadow: 0 0 12px rgba(0, 224, 198, 0.25);
+}
+
+/* TABLE */
+
+.table-wrapper {
+width: 100%;
+overflow-x: auto;
+border-radius: 14px;
+}
+
+.fixture-table {
+width: 100%;
+min-width: 720px;
+border-collapse: collapse;
+}
+
+.fixture-table th,
+.fixture-table td {
+padding: 14px 12px;
+text-align: left;
+}
+
+.fixture-table th {
+position: sticky;
+top: 0;
+z-index: 2;
+
+color: #9ee9f2;
+background: #102f38;
+
+font-size: 0.9rem;
+text-transform: uppercase;
+letter-spacing: 0.4px;
+
+border-bottom: 2px solid rgba(0, 224, 198, 0.35);
+}
+
+.fixture-table tbody tr {
+transition: 0.2s ease;
+border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.fixture-table tbody tr:nth-child(even) {
+background: rgba(255, 255, 255, 0.025);
+}
+
+.fixture-table tbody tr:hover {
+background: rgba(0, 224, 198, 0.07);
+}
+
+.fixture-table td {
+color: #e7f5f6;
+}
+
+/* NEXT FIXTURE */
+
+.fixture-table tr.next-fixture {
+position: relative;
+
+background:
+linear-gradient(
+90deg,
+rgba(0, 224, 198, 0.16),
+rgba(0, 224, 198, 0.04)
+);
+
+box-shadow:
+inset 4px 0 0 #00e0c6;
+}
+
+.next-label {
+display: inline-block;
+margin-left: 8px;
+padding: 4px 8px;
+
+border-radius: 999px;
+
+color: #061116;
+background: #00e0c6;
+
+font-size: 0.68rem;
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 0.4px;
+}
+
+/* BADGES */
+
+.badge {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+min-width: 70px;
+padding: 6px 10px;
+
+border-radius: 999px;
+
+font-size: 0.78rem;
+font-weight: 800;
+white-space: nowrap;
+}
+
+.badge-home {
+color: #d7ffef;
+background: rgba(22, 163, 74, 0.22);
+border: 1px solid rgba(74, 222, 128, 0.5);
+}
+
+.badge-away {
+color: #dbeafe;
+background: rgba(37, 99, 235, 0.22);
+border: 1px solid rgba(96, 165, 250, 0.5);
+}
+
+.badge-league {
+color: #fff7d6;
+background: rgba(234, 179, 8, 0.17);
+border: 1px solid rgba(250, 204, 21, 0.45);
+}
+
+.badge-cup {
+color: #f4e8ff;
+background: rgba(147, 51, 234, 0.2);
+border: 1px solid rgba(192, 132, 252, 0.5);
+}
+
+.badge-pre-season {
+color: #ffe8d6;
+background: rgba(234, 88, 12, 0.2);
+border: 1px solid rgba(251, 146, 60, 0.5);
+}
+
+.badge-playoffs {
+color: #ffe4e6;
+background: rgba(225, 29, 72, 0.2);
+border: 1px solid rgba(251, 113, 133, 0.5);
+}
+
+/* EMPTY FILTER MESSAGE */
+
+.no-results {
+display: none;
+padding: 30px 15px;
 text-align: center;
+
+color: #bfe4e8;
+background: rgba(255, 255, 255, 0.025);
+
+border: 1px dashed rgba(0, 224, 198, 0.25);
+border-radius: 14px;
 }
 
-.stats-grid {
-grid-template-columns: repeat(2, 1fr);
-}
+/* MOBILE */
 
-.extra-grid {
-grid-template-columns: 1fr;
-}
-}
+@media (max-width: 700px) {
 
-@media (max-width: 600px) {
 .logo {
 width: 140px;
 }
@@ -237,40 +353,196 @@ header h1 {
 font-size: 2rem;
 }
 
-.player-name {
-font-size: 2rem;
+.fixture-card {
+padding: 18px 14px;
 }
 
-.stats-grid {
-grid-template-columns: 1fr 1fr;
+.fixture-heading {
+align-items: flex-start;
+flex-direction: column;
+gap: 5px;
 }
 
-.profile-image {
-width: 200px;
-height: 200px;
+.fixture-filters {
+gap: 8px;
+}
+
+.filter-button {
+padding: 8px 12px;
+font-size: 0.8rem;
+}
+
+.table-wrapper {
+overflow: visible;
+}
+
+.fixture-table {
+min-width: 0;
+}
+
+.fixture-table thead {
+display: none;
+}
+
+.fixture-table,
+.fixture-table tbody,
+.fixture-table tr,
+.fixture-table td {
+display: block;
+width: 100%;
+}
+
+.fixture-table tr {
+margin-bottom: 14px;
+padding: 14px;
+
+border: 1px solid rgba(30, 199, 217, 0.18);
+border-radius: 14px;
+
+background: rgba(255, 255, 255, 0.035);
+}
+
+.fixture-table tbody tr:nth-child(even) {
+background: rgba(255, 255, 255, 0.035);
+}
+
+.fixture-table td {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+
+padding: 8px 0;
+text-align: right;
+
+border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.fixture-table td:last-child {
+border-bottom: none;
+}
+
+.fixture-table td::before {
+content: attr(data-label);
+
+color: #9ee9f2;
+font-size: 0.78rem;
+font-weight: 800;
+text-transform: uppercase;
+text-align: left;
+}
+
+.fixture-table tr.next-fixture {
+box-shadow:
+inset 4px 0 0 #00e0c6,
+0 0 16px rgba(0, 224, 198, 0.1);
+}
+
+.next-label {
+margin-left: 5px;
 }
 }
 </style>
 </head>
+
 <body>
+
 <header>
 <div class="header-content">
-<img src="logo2.png" alt="MK Thunder Logo" class="logo">
+
+<img
+src="logo2.png"
+alt="MK Thunder Logo"
+class="logo"
+>
+
 <div>
-<h1>MK Thunder fixtures</h1>
+<h1>MK Thunder Fixtures</h1>
 <p>Full fixture list for the 2026/27 season</p>
 </div>
+
 </div>
+
 <div class="header-divider"></div>
 </header>
 
-<div class="container">
-<a href="index.html" class="back-link">← Back to Stats</a>
+<main class="container">
 
-<div class="profile-card">
-<h2 class="section-title">All Fixtures</h2>
+<a href="index.html" class="back-link">
+← Back to Stats
+</a>
 
-<table style="width:100%; border-collapse:collapse;">
+<section class="fixture-card">
+
+<div class="fixture-heading">
+
+<h2 class="section-title">
+All Fixtures
+</h2>
+
+<div class="fixture-count" id="fixtureCount">
+0 fixtures
+</div>
+
+</div>
+
+<div class="fixture-filters">
+
+<button
+class="filter-button active"
+data-filter="all"
+type="button"
+>
+All
+</button>
+
+<button
+class="filter-button"
+data-filter="home"
+type="button"
+>
+Home
+</button>
+
+<button
+class="filter-button"
+data-filter="away"
+type="button"
+>
+Away
+</button>
+
+<button
+class="filter-button"
+data-filter="league"
+type="button"
+>
+League
+</button>
+
+<button
+class="filter-button"
+data-filter="cup"
+type="button"
+>
+Cup
+</button>
+
+<button
+class="filter-button"
+data-filter="pre-season"
+type="button"
+>
+Pre-Season
+</button>
+
+</div>
+
+<div class="table-wrapper">
+
+<table class="fixture-table">
+
+<thead>
 <tr>
 <th>Date</th>
 <th>Opponent</th>
@@ -278,202 +550,343 @@ height: 200px;
 <th>Competition</th>
 <th>Face Off</th>
 </tr>
+</thead>
 
-<tr>
-<td>30/08/2026</td>
-<td>Deeside Dragons</td>
-<td>Away</td>
-<td>Pre-Season</td>
-<td>17:15</td>
+<tbody id="fixtureTableBody">
+
+<tr
+class="fixture-row"
+data-date="2026-08-30"
+data-location="away"
+data-competition="pre-season"
+>
+<td data-label="Date">
+30/08/2026
+</td>
+
+<td data-label="Opponent">
+Deeside Dragons
+</td>
+
+<td data-label="H/A">
+<span class="badge badge-away">
+Away
+</span>
+</td>
+
+<td data-label="Competition">
+<span class="badge badge-pre-season">
+Pre-Season
+</span>
+</td>
+
+<td data-label="Face Off">
+17:15
+</td>
 </tr>
 
-<tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
+<!-- Cardiff test fixtures -->
+
+<tr
+class="fixture-row"
+data-date="2026-09-22"
+data-location="away"
+data-competition="league"
+>
+<td data-label="Date">
+22/09/2026
+</td>
+
+<td data-label="Opponent">
+Cardiff Canucks
+</td>
+
+<td data-label="H/A">
+<span class="badge badge-away">
+Away
+</span>
+</td>
+
+<td data-label="Competition">
+<span class="badge badge-league">
+League
+</span>
+</td>
+
+<td data-label="Face Off">
+18:00
+</td>
 </tr>
 
-<tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
+<tr
+class="fixture-row"
+data-date="2026-09-22"
+data-location="away"
+data-competition="league"
+>
+<td data-label="Date">22/09/2026</td>
+<td data-label="Opponent">Cardiff Canucks</td>
+
+<td data-label="H/A">
+<span class="badge badge-away">
+Away
+</span>
+</td>
+
+<td data-label="Competition">
+<span class="badge badge-league">
+League
+</span>
+</td>
+
+<td data-label="Face Off">18:00</td>
 </tr>
 
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
+<tr
+class="fixture-row"
+data-date="2026-09-22"
+data-location="away"
+data-competition="league"
+>
+<td data-label="Date">22/09/2026</td>
+<td data-label="Opponent">Cardiff Canucks</td>
+
+<td data-label="H/A">
+<span class="badge badge-away">
+Away
+</span>
+</td>
+
+<td data-label="Competition">
+<span class="badge badge-league">
+League
+</span>
+</td>
+
+<td data-label="Face Off">18:00</td>
 </tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
+
+<tr
+class="fixture-row"
+data-date="2026-09-22"
+data-location="away"
+data-competition="league"
+>
+<td data-label="Date">22/09/2026</td>
+<td data-label="Opponent">Cardiff Canucks</td>
+
+<td data-label="H/A">
+<span class="badge badge-away">
+Away
+</span>
+</td>
+
+<td data-label="Competition">
+<span class="badge badge-league">
+League
+</span>
+</td>
+
+<td data-label="Face Off">18:00</td>
 </tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
+
+<tr
+class="fixture-row"
+data-date="2026-09-22"
+data-location="away"
+data-competition="league"
+>
+<td data-label="Date">22/09/2026</td>
+<td data-label="Opponent">Cardiff Canucks</td>
+
+<td data-label="H/A">
+<span class="badge badge-away">
+Away
+</span>
+</td>
+
+<td data-label="Competition">
+<span class="badge badge-league">
+League
+</span>
+</td>
+
+<td data-label="Face Off">18:00</td>
 </tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
+
+<tr
+class="fixture-row"
+data-date="2026-09-29"
+data-location="home"
+data-competition="league"
+>
+<td data-label="Date">
+29/09/2026
+</td>
+
+<td data-label="Opponent">
+Invicta Mustangs
+</td>
+
+<td data-label="H/A">
+<span class="badge badge-home">
+Home
+</span>
+</td>
+
+<td data-label="Competition">
+<span class="badge badge-league">
+League
+</span>
+</td>
+
+<td data-label="Face Off">
+19:30
+</td>
 </tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-  <tr>
-<td>22/09/2026</td>
-<td>Cardiff Canucks</td>
-<td>Away</td>
-<td>League</td>
-<td>18:00</td>
-</tr>
-  
-<tr>
-<td>29/09/2026</td>
-<td>Invicta Mustangs</td>
-<td>Home</td>
-<td>League</td>
-<td>19:30</td>
-</tr>
+
+</tbody>
+
 </table>
+
 </div>
+
+<div class="no-results" id="noResults">
+No fixtures match this filter.
 </div>
+
+</section>
+
+</main>
+
+<script>
+const fixtureRows = Array.from(
+document.querySelectorAll(".fixture-row")
+);
+
+const filterButtons = document.querySelectorAll(
+".filter-button"
+);
+
+const fixtureCount = document.getElementById(
+"fixtureCount"
+);
+
+const noResults = document.getElementById(
+"noResults"
+);
+
+/*
+Highlight the first fixture that has not yet passed.
+The time is set to the end of the day so today's fixture
+remains highlighted.
+*/
+
+function highlightNextFixture() {
+
+const now = new Date();
+
+const upcomingRows = fixtureRows
+.filter(row => {
+const fixtureDate = new Date(
+row.dataset.date + "T23:59:59"
+);
+
+return fixtureDate >= now;
+})
+.sort((a, b) => {
+return new Date(a.dataset.date) -
+new Date(b.dataset.date);
+});
+
+if (upcomingRows.length === 0) {
+return;
+}
+
+const nextFixture = upcomingRows[0];
+
+nextFixture.classList.add("next-fixture");
+
+const opponentCell =
+nextFixture.querySelector(
+'td[data-label="Opponent"]'
+);
+
+const nextLabel =
+document.createElement("span");
+
+nextLabel.className = "next-label";
+nextLabel.textContent = "Next";
+
+opponentCell.appendChild(nextLabel);
+}
+
+/*
+Show only the fixtures matching the selected filter.
+*/
+
+function filterFixtures(filter) {
+
+let visibleFixtures = 0;
+
+fixtureRows.forEach(row => {
+
+const location =
+row.dataset.location;
+
+const competition =
+row.dataset.competition;
+
+const shouldShow =
+filter === "all" ||
+filter === location ||
+filter === competition;
+
+row.style.display =
+shouldShow ? "" : "none";
+
+if (shouldShow) {
+visibleFixtures++;
+}
+
+});
+
+fixtureCount.textContent =
+visibleFixtures === 1
+? "1 fixture"
+: visibleFixtures + " fixtures";
+
+noResults.style.display =
+visibleFixtures === 0
+? "block"
+: "none";
+}
+
+/*
+Filter button controls.
+*/
+
+filterButtons.forEach(button => {
+
+button.addEventListener("click", () => {
+
+filterButtons.forEach(item => {
+item.classList.remove("active");
+});
+
+button.classList.add("active");
+
+filterFixtures(
+button.dataset.filter
+);
+
+});
+
+});
+
+highlightNextFixture();
+filterFixtures("all");
+</script>
+
 </body>
 </html>
-
-  
