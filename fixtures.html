@@ -723,7 +723,7 @@ Show only the fixtures matching the selected filter.
 */
 
 function filterFixtures(filter) {
-
+filter = filter.trim().toLowerCase();
 let visibleFixtures = 0;
 
 fixtureRows.forEach(row => {
@@ -732,7 +732,7 @@ const location =
 row.dataset.location;
 
 const competition =
-row.dataset.competition;
+row.dataset.competition.trim().toLowerCase();
 
 const shouldShow =
 filter === "all" ||
