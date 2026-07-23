@@ -13,6 +13,20 @@
   "Nationality": "Switzerland",
   "status": "Active",
   "bio": "A dependable forward with a strong team-first mentality, Sam Peters brings energy, consistency, and commitment every time he steps onto the ice. Contributing 12 points in 22 games last season, he proved his value as a balanced offensive threat while also doing the hard work away from the puck."
+},
+     {
+"name": "Madi Wright",
+"image": "madi.png",
+"gp": 0,
+"goals": 0,
+"assists": 0,
+"points":0 ,
+"pim": 0 ,
+  "number":10,
+  "position": "Defence",
+  "Nationality": "Great Britain",
+  "status": "Active",
+  "bio": ""
 }, 
     {
 "name": "Josh Hickman",
@@ -554,8 +568,8 @@
 "faceOff": "17:15"
 },
 {
-"date": "29/09/2026",
-"opponent": "Invicta Mustangs",
+"date": "12/09/2026",
+"opponent": "Cardiff Canucks",
 "competition": "League",
 "homeAway": "Home",
 "faceOff": "19:30"
