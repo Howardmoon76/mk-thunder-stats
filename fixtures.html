@@ -345,7 +345,9 @@ display: flex;
 align-items: center;
 gap: 10px;
 }
-
+.next-label {
+   margin-left: auto
+  }
 .team-logo {
 width: 28px;
 height: 28px;
@@ -823,10 +825,9 @@ const nextFixture = upcomingRows[0];
 
 nextFixture.classList.add("next-fixture");
 
-const opponentCell =
-nextFixture.querySelector(
-'td[data-label="Opponent"]'
-);
+const opponentDiv =
+nextFixture.querySelector(".opponent");
+
 
 const nextLabel =
 document.createElement("span");
@@ -834,7 +835,7 @@ document.createElement("span");
 nextLabel.className = "next-label";
 nextLabel.textContent = "Next";
 
-opponentCell.appendChild(nextLabel);
+opponentDiv.appendChild(nextLabel);
 }
 
 /*
