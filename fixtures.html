@@ -113,6 +113,32 @@ background: rgba(0, 224, 198, 0.08);
 box-shadow: 0 0 12px rgba(0, 224, 198, 0.2);
 }
 
+.calendar-download {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+margin: 0 0 18px 10px;
+padding: 10px 16px;
+
+border-radius: 10px;
+border: 1px solid #00e0c6;
+
+color: #061116;
+text-decoration: none;
+font-weight: 800;
+
+background: #00e0c6;
+box-shadow: 0 0 12px rgba(0, 224, 198, 0.22);
+transition: 0.2s ease;
+}
+
+.calendar-download:hover {
+background: #5ff2df;
+box-shadow: 0 0 18px rgba(0, 224, 198, 0.38);
+transform: translateY(-1px);
+}
+
 /* FIXTURE CARD */
 
 .fixture-card {
@@ -482,6 +508,10 @@ class="logo"
 
 <a href="index.html" class="back-link">
 ← Back to Stats
+</a>
+
+<a href="fixtures.ics" class="calendar-download" download>
+📅 Add Fixtures to Calendar
 </a>
 
 <section class="fixture-card">
