@@ -1,0 +1,224 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sheffield Fixtures//2026-27//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sheffield 2026-27 Fixtures
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+UID:2026-09-13-chelmsford-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20260913T183000
+DTEND;TZID=Europe/London:20260913T210000
+SUMMARY:Sheffield vs Chelmsford
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-19-invicta-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20260919T190000
+DTEND;TZID=Europe/London:20260919T213000
+SUMMARY:Invicta vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-20-guildford-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20260920T183000
+DTEND;TZID=Europe/London:20260920T210000
+SUMMARY:Guildford vs Sheffield
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-26-cardiff-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20260926T184500
+DTEND;TZID=Europe/London:20260926T211500
+SUMMARY:Sheffield vs Cardiff
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-lee-valley-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261003T190000
+DTEND;TZID=Europe/London:20261003T213000
+SUMMARY:Sheffield vs Lee Valley
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-11-basingstoke-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261011T183000
+DTEND;TZID=Europe/London:20261011T210000
+SUMMARY:Basingstoke vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-17-lee-valley-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261017T173000
+DTEND;TZID=Europe/London:20261017T200000
+SUMMARY:Lee Valley vs Sheffield
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-solent-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261025T183000
+DTEND;TZID=Europe/London:20261025T210000
+SUMMARY:Solent vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-chelmsford-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261101T180000
+DTEND;TZID=Europe/London:20261101T203000
+SUMMARY:Chelmsford vs Sheffield
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-invicta-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261108T180000
+DTEND;TZID=Europe/London:20261108T203000
+SUMMARY:Sheffield vs Invicta
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-cardiff-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261114T190000
+DTEND;TZID=Europe/London:20261114T213000
+SUMMARY:Sheffield vs Cardiff
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15-solent-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261115T170000
+DTEND;TZID=Europe/London:20261115T193000
+SUMMARY:Solent vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-bristol-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261128T190000
+DTEND;TZID=Europe/London:20261128T213000
+SUMMARY:Bristol vs Sheffield
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-guildford-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261129T173000
+DTEND;TZID=Europe/London:20261129T200000
+SUMMARY:Sheffield vs Guildford
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-peterborough-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261212T193000
+DTEND;TZID=Europe/London:20261212T220000
+SUMMARY:Peterborough vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-haringey-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261213T183000
+DTEND;TZID=Europe/London:20261213T210000
+SUMMARY:Sheffield vs Haringey
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-bristol-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20261220T183000
+DTEND;TZID=Europe/London:20261220T210000
+SUMMARY:Sheffield vs Bristol
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-03-oxford-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20270103T183000
+DTEND;TZID=Europe/London:20270103T210000
+SUMMARY:Oxford vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-30-slough-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20270130T190000
+DTEND;TZID=Europe/London:20270130T213000
+SUMMARY:Sheffield vs Slough
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-06-peterborough-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20270206T183000
+DTEND;TZID=Europe/London:20270206T210000
+SUMMARY:Sheffield vs Peterborough
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-28-oxford-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20270228T181500
+DTEND;TZID=Europe/London:20270228T204500
+SUMMARY:Oxford vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-06-haringey-home@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20270306T173000
+DTEND;TZID=Europe/London:20270306T200000
+SUMMARY:Sheffield vs Haringey
+DESCRIPTION:League/Cup fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-13-basingstoke-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20270313T184500
+DTEND;TZID=Europe/London:20270313T211500
+SUMMARY:Basingstoke vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-21-slough-away@sheffield-fixtures
+DTSTAMP:20260727T124940Z
+DTSTART;TZID=Europe/London:20270321T174500
+DTEND;TZID=Europe/London:20270321T201500
+SUMMARY:Slough vs Sheffield
+DESCRIPTION:League fixture. Face-off time shown as TBC on the published schedule.
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
