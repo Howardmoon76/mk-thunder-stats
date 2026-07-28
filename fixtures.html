@@ -353,6 +353,12 @@ background: rgba(225, 29, 72, 0.2);
 border: 1px solid rgba(251, 113, 133, 0.5);
 }
 
+.competition-badges {
+display: flex;
+flex-wrap: wrap;
+gap: 6px;
+}
+
 /* EMPTY FILTER MESSAGE */
 
 .no-results {
@@ -623,9 +629,11 @@ Away
 </td>
 
 <td data-label="Competition">
+<div class="competition-badges">
 <span class="badge badge-pre-season">
 Pre-Season
 </span>
+</div>
 </td>
 
 <td data-label="Face Off">
@@ -662,9 +670,11 @@ Away
 </td>
 
 <td data-label="Competition">
+<div class="competition-badges">
 <span class="badge badge-pre-season">
 Pre-Season
 </span>
+</div>
 </td>
 
 <td data-label="Face Off">
@@ -676,7 +686,7 @@ Pre-Season
 class="fixture-row"
 data-date="2026-09-13"
 data-location="home"
-data-competition="league"
+data-competition="league cup"
 >
 <td data-label="Date">
 13/09/2026
@@ -699,9 +709,16 @@ Home
 </td>
 
 <td data-label="Competition">
+<div class="competition-badges">
+<div class="competition-badges">
 <span class="badge badge-league">
 League
 </span>
+<span class="badge badge-cup">
+Cup
+</span>
+</div>
+</div>
 </td>
 
 <td data-label="Face Off">
@@ -712,7 +729,7 @@ League
 class="fixture-row"
 data-date="2026-09-19"
 data-location="away"
-data-competition="league"
+data-competition="league cup"
 >
 <td data-label="Date">
 19/09/2026
@@ -735,9 +752,16 @@ Away
 </td>
 
 <td data-label="Competition">
+<div class="competition-badges">
+<div class="competition-badges">
 <span class="badge badge-league">
 League
 </span>
+<span class="badge badge-cup">
+Cup
+</span>
+</div>
+</div>
 </td>
 
 <td data-label="Face Off">
@@ -833,13 +857,15 @@ fixtureRows.forEach(row => {
 const location =
 row.dataset.location;
 
-const competition =
-row.dataset.competition.trim().toLowerCase();
+const competitions = row.dataset.competition
+.trim()
+.toLowerCase()
+.split(/\s+/);
 
 const shouldShow =
 filter === "all" ||
 filter === location ||
-filter === competition;
+competitions.includes(filter);
 
 row.style.display =
 shouldShow ? "" : "none";
