@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="MK Thunder fixtures, results, player statistics, league table and match reports for Milton Keynes Thunder Ice Hockey Club.">  
+<meta name="description" content="MK Thunder fixtures, results, player statistics, league table and match reports for Milton Keynes Thunder Ice Hockey Club.">
 <title>MK Thunder Stats | Fixtures, Results, League Table & Player Stats</title>
 <style>
 * {
@@ -19,6 +19,7 @@ radial-gradient(circle at top, rgba(35, 185, 205, 0.15), transparent 35%),
 linear-gradient(180deg, #061116 0%, #0a1f27 45%, #0d2a33 100%);
 min-height: 100vh;
 }
+
 .team-logo {
 width: 28px;
 height: 28px;
@@ -26,6 +27,7 @@ object-fit: contain;
 vertical-align: middle;
 margin-right: 8px;
 }
+
 header {
 text-align: center;
 padding: 30px 20px 10px;
@@ -88,6 +90,38 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 20px;
 margin-bottom: 22px;
+}
+
+.netminder-section {
+margin-bottom: 22px;
+}
+
+.section-title {
+margin: 0 0 14px;
+color: #9ee9f2;
+font-size: 1.15rem;
+text-transform: uppercase;
+letter-spacing: 0.7px;
+}
+
+.netminder-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.netminder-stats {
+color: #c8e2e7;
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+.netminder-value {
+font-size: 2.2rem;
+font-weight: 900;
+color: #1ec7d9;
+margin-bottom: 6px;
+line-height: 1;
 }
 
 .bottom-grid {
@@ -199,6 +233,7 @@ display: block;
 color: #00e0c6;
 text-decoration: underline;
 }
+
 .view-all-link {
 display: block;
 text-align: center;
@@ -360,14 +395,17 @@ background: rgba(0, 224, 198, 0.08);
 box-shadow: inset 3px 0 0 #00e0c6;
 font-weight: 700;
 }
+
 .results-grid {
 display: grid;
-grid-template-columns: 1fr);
+grid-template-columns: 1fr;
 gap: 18px;
 }
+
 @media (max-width: 1000px) {
 .hero-grid,
 .leaders-grid,
+.netminder-grid,
 .bottom-grid,
 .results-grid {
 grid-template-columns: 1fr;
@@ -395,7 +433,8 @@ font-size: 2.4rem;
 font-size: 1.1rem;
 }
 
-.mini-value {
+.mini-value,
+.netminder-value {
 font-size: 1.8rem;
 }
 
@@ -407,6 +446,7 @@ align-items: flex-start;
 }
 </style>
 </head>
+
 <body>
 <header>
 <div class="header-content">
@@ -420,6 +460,7 @@ align-items: flex-start;
 </header>
 
 <div class="container">
+
 <div class="hero-grid">
 <div class="card hero-card">
 <h2>Top Scorer</h2>
@@ -454,6 +495,13 @@ align-items: flex-start;
 </div>
 </div>
 
+<div class="netminder-section">
+<h2 class="section-title">Netminders</h2>
+<div class="netminder-grid" id="netminderGrid">
+Loading...
+</div>
+</div>
+
 <div class="bottom-grid">
 <div class="card">
 <h2>Team Leaders</h2>
@@ -481,7 +529,7 @@ align-items: flex-start;
 View Full Fixture List →
 </a>
 
-
+</div>
 </div>
 
 <div class="card league-card">
@@ -556,6 +604,48 @@ document.getElementById("pimLeader").innerHTML = `
 <img src="${pimLeader.image || "placeholder.png"}" alt="${pimLeader.name}" class="mini-player-img">
 </div>
 `;
+
+const netminders = players.filter(player =>
+(player.position || "").toLowerCase() === "netminder"
+);
+
+const netminderGrid = document.getElementById("netminderGrid");
+
+if (netminders.length > 0) {
+netminderGrid.innerHTML = netminders.slice(0, 3).map(goalie => `
+<div class="card">
+<div class="mini-player">
+<div>
+<div class="mini-name">
+<a class="player-link" href="player.html?name=${encodeURIComponent(goalie.name)}">
+${goalie.name}
+</a>
+</div>
+
+<div class="netminder-value">
+${goalie.svp ?? "0.000"} SV%
+</div>
+
+<div class="netminder-stats">
+GP: ${goalie.gp ?? 0}<br>
+W: ${goalie.wins ?? 0} • GAA: ${goalie.gaa ?? "0.00"}
+</div>
+</div>
+
+<img
+src="${goalie.image || "placeholder.png"}"
+alt="${goalie.name}"
+class="mini-player-img">
+</div>
+</div>
+`).join("");
+} else {
+netminderGrid.innerHTML = `
+<div class="card">
+<div class="sub-text">No netminder stats available yet.</div>
+</div>
+`;
+}
 
 const leadersContainer = document.getElementById("leaders");
 let showAllLeaders = false;
@@ -641,15 +731,29 @@ document.getElementById("nextGame").innerHTML = `
 <div class="sub-text">${nextGame.date} • ${nextGame.homeAway} • ${nextGame.competition}</div>
 </a>
 `;
- document.getElementById("nextGameMini").innerHTML = `
+
+document.getElementById("nextGameMini").innerHTML = `
 <a href="fixture.html" style="text-decoration:none;color:inherit;">
 <div class="result-row">
 <div class="result-title">${nextGame.date} - ${nextGame.opponent}</div>
 <div class="result-meta">${nextGame.homeAway} | ${nextGame.competition} | ${nextGame.faceOff}</div>
 </div>
 </a>
-  `;
+`;
+} else {
+document.getElementById("nextGame").innerHTML = `
+<div class="stat-name">No next game set</div>
+<div class="sub-text">Add nextGame to your data.json</div>
+`;
+
+document.getElementById("nextGameMini").innerHTML = `
+<div class="result-row">
+<div class="result-title">No next game set</div>
+<div class="result-meta">Add nextGame to your data.json</div>
+</div>
+`;
 }
+
 if (data.fixtures && data.fixtures.length > 0) {
 document.getElementById("upcomingFixtures").innerHTML = data.fixtures.slice(0, 3).map(fixture => `
 <div class="result-row">
@@ -665,8 +769,8 @@ document.getElementById("upcomingFixtures").innerHTML = `
 </div>
 `;
 }
+
 const recentGames = [...games].reverse().slice(0, 5);
-  
 
 if (recentGames.length > 0) {
 document.getElementById("recentResults").innerHTML = recentGames.map(game => {
@@ -760,12 +864,16 @@ document.getElementById("nextGame").textContent = "Could not load data.";
 document.getElementById("pointsLeader").textContent = "Could not load data.";
 document.getElementById("goalsLeader").textContent = "Could not load data.";
 document.getElementById("pimLeader").textContent = "Could not load data.";
+document.getElementById("netminderGrid").textContent = "Could not load data.";
 document.getElementById("leaders").textContent = "Could not load data.";
 document.getElementById("recentResults").textContent = "Could not load data.";
+document.getElementById("nextGameMini").textContent = "Could not load data.";
+document.getElementById("upcomingFixtures").textContent = "Could not load data.";
 document.getElementById("leagueTable").textContent = "Could not load data.";
 });
 </script>
- <p style="text-align:center; padding:20px;">
+
+<p style="text-align:center; padding:20px;">
 Contact:
 <a href="mailto:mkthunderfan@gmail.com" style="color:white;">
 mkthunderfan@gmail.com
